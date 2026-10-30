@@ -1,0 +1,1404 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="cs">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Popis zpracování 2013</title>
+<base target="_self">
+</head>
+
+<body bgcolor="#FFFFB3">
+
+<h2><font face="Arial" size="4"><b>Popis zpracování pro rok
+</b></font>
+<font face="Arial" size="3"><b><a href="setreni2023.htm">2023</a>&nbsp; 
+<a href="setreni2022.htm">2022</a>&nbsp;
+<a href="setreni2021.htm">2021</a>&nbsp; 
+<a href="setreni2020.htm">2020</a></b></font><b><font face="Arial" size="3">&nbsp; <a href="setreni2019.htm">2019</a>&nbsp; 
+<a href="setreni2018.htm">2018</a>&nbsp; 
+<a href="setreni2017.htm">2017</a>&nbsp; 
+<a href="setreni2016.htm">2016</a>&nbsp; </font></b>
+<font face="Arial" size="3"><b><a href="setreni2015.htm">2015</a>&nbsp; <a href="setreni2014.htm">2014</a>&nbsp; 2013&nbsp;
+<a href="setreni2012.htm">2012</a>&nbsp;
+<a href="setreni2011.htm">2011</a>&nbsp;
+<a href="setreni2010.htm">2010</a>&nbsp; <a href="setreni2009.htm">2009</a>&nbsp;
+<a href="setreni2008.htm">2008</a></b></font></h2>
+<hr>
+
+<ul>
+  <li><font face="Arial">Doporučuji přejmenovat&nbsp; adresář TES z roku 2012 např. 
+	na TES2012 a verzi 15.00 pro rok 2013 instalovat do samostatného adresáře (např. TES). 
+	Budete tak mít možnost současně si spustit loňský program TES verze 14 a 
+	prohlížet data minulého roku.<br>
+	Pokud pojmenujete adresář s daty minulého roku odlišně, opravte po instalaci 
+	nastavení cest k loňským datům v nabídce <b>&lt;Nastavení-cesty&gt;</b>. Výchozí 
+	nastavení tohoto přepínače je <b>&lt;C<span lang="en-us">:\TES2012</span>&gt;</b><span lang="en-us">.</span><br>
+	<font color="#ff0000"><i>Upozornění:&nbsp;<br>
+	</i></font>Při současném spuštění programu TES pro rok 2013 i pro rok 2012 
+	je nutno věnovat pozornost sdílení souborů. <span lang="en-us">Je pou</span>žívána 
+	nesíťová verze Fandu, nelze tudíž mít současně otevřen jeden soubor dvěma 
+	programy. Pokud tedy budete mít např. otevřen soubor Aktíva v roce 2012 a v 
+	programu pro rok 2013 spustíte klávesou &lt;Alt_F5&gt; převzetí dat z loňského 
+	roku, dojde ke kolizi.<br>
+	Také při spouštění kontrol vazeb, při kterých se čtou data ze souborů 
+	loňského roku, nelze mít tyto soubory otevřeny k editaci. <br>
+	<b>Ponechání loňských i letošní dat v jednom adresáři nedoporučuji.<br>
+&nbsp;</b></font></li>
+	<li><font face="Arial">Z loňské verze</font> <font face="Arial">programu si překopírujte soubory 
+	<b>ZAKAZNIK.*</b>&nbsp;<br>
+&nbsp;</font></li>
+	<li><font face="Arial">Pro jednotlivé podniky překopírujte podnikové 
+	číselníky (adresáře <b><span lang="en-us">\</span>12345678<span lang="en-us">\</span>Ci</b>).<br>
+&nbsp;</font></li>
+	<li><font face="Arial">Zkontrolujte nastavení cest k datům loňského roku v 
+	nabídce <b>&lt;Nastavení-cesty&gt;</b>.<br>&nbsp;</font></li>
+	<li><font face="Arial">Nic jiného není potřeba kopírovat. Soubor D_ID s 
+	identifikačními údaji podniku 
+	se založí sám. Pokud při zpracování období 12/2013 poprvé spustíte</font>
+	<font face="Arial">nabídku <b>&lt;<i>Pořízení - Identifikace podniku</i>&gt;</b>, program
+    se dotáže, zda chcete</font> <font face="Arial">převzít tyto&nbsp;
+    údaje z loňského roku, abyste je nemuseli znovu</font> <font face="Arial">vyplňovat,
+    protože se zpravidla téměř nemění.<br>&nbsp;</font></li>
+</ul>
+<p><font face="Arial"><br>
+</font><font face="Arial"><b>ÚPRAVA DAT V TABULKÁCH<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</b>Následující řádky berte jako 
+pomůcku, jak postupovat při úpravě dat v tabulkách.</font></p>
+<ul>
+  <li><font face="Arial"><b>A. Identifikace podniku<br>
+	</b>Okres sídla podnikání změněn na <b>&lt;Okres místa podnikání&gt;. </b>Pokud 
+	máte nějaký podnik registrován např. v Praze, ale výroba šetřeného podniku 
+	je provozována někde jinde, změňte na kód okresu ve kterém je vyvíjena 
+	činnost. <br>
+	Doplněn údaj <b>&lt;Obec místa podnikání&gt;</b>. Údaj není vázán na žádný 
+	číselník. Ručně vepíšete název obce, kde uskutečňována hlavní část 
+	zemědělské produkce. Tedy zpravidla, pokud má podnik převážnou část tržeb z 
+	živočišné výroby, bude to obec, ve které jsou největší kapacity pro 
+	ustájení. Pokud má podnik rozhodující podíl tržeb z rostlinné výroby, pak 
+	uvedete název obce v jejímž katastru je největší výměra obhospodařovaných 
+	polí.&nbsp;&nbsp; <br>
+&nbsp;</font></li>
+	<li><font face="Arial"><b>B. Půdní fond podniku<br></b>Zrušeny sloupce 
+	&lt;Zavlažovaná&gt; a &lt;Pod ochranou&gt;.<b><br>
+	</b>Doplněn nový řádek <b>&lt;19 - Zemědělská půda v oblastech NATURA 2000&gt;</b>.<b>
+	</b>Údaj<b> </b>bude vyplňován ze sestavy LPIS&nbsp; &quot;Přehled účinných PB/DPB 
+	s údaji LFA a zařazení do oblastí NATURA 2000&quot; <b><br>
+	<br>
+	</b>Sloupec<b> &lt;Půda s placeným pachtovným&gt;
+	</b>má obsahovat rozdělení celkové výměry pronajaté půdy, za kterou je 
+	placeno nájemné z pozemků.&nbsp; <br>Při pořízení tohoto sloupce lze vložením prázdného údaje klávesou mezerník a 
+	potvrzením klávesou &lt;Enter&gt; převzít výměru ze sloupce &lt;Připachtovaná 
+	obhospodařovaná celkem&gt;.<br>Lze předpokládat, že podniky stěží zjistí celkovou výměru z nájemních smluv, 
+	natož rozdělení této výměry podle jednotlivých druhů pozemků. Pro případ, že 
+	znáte pouze celkovou výměru půdy z nájemních smluv a potřebujete ji rozdělit 
+	mezi jednotlivé kultury, můžete použít pomůcku, kterou vyvoláte klávesu <b>&lt;Alt F3 - Rozděl půdu s placeným pachtovným&gt;</b>.&nbsp; Touto akcí se 
+	vysčítají výměry ze sloupce &lt;Připachtovaná půda s placeným pachtovným&gt; a 
+	&lt;Připachtovaná půda obhospodařovaná celkem&gt;. Z podílu těchto dvou součtů je 
+	zjištěn poměr, kolik pronajaté půdy připadá na&nbsp; ha obhospodařované půdy. 
+	Tímto koeficientem je vynásobena&nbsp; výměra obhospodařované půdy a tak je 
+	zjištěna výměra, ze které je placeno pachtovné. Vypočtená hodnota je 
+	doplněna do sloupce 3.&nbsp; Stačí tedy zadat celkovou výměru půdy z 
+	nájemních smluv do jakéhokoliv řádku ve&nbsp; sloupci &lt;Půda s placeným 
+	pachtovným&gt; a popisovanou akcí bude rozděleno.&nbsp; </font>
+	<p><font face="Arial">Sloupec <b>&lt;Celkem (zařazení do LFA)&gt; </b>obsahuje pro běžné řádky 
+	(01 až 14) součet 
+	vlastní a připachtované půdy. Pořízení tabulky bylo upraveno tak, že po 
+	vyplnění vlastní a obhospodařované připachtované půdy se automaticky doplní součet těchto 
+	dvou hodnot do sloupce <b>&lt;Celkem&gt; </b>a kurzor přeskočí na další pole. Pořízení sloupce 
+	4 se 
+	tedy neprovádí.<br>Políčka, která nemá smysl vyplňovat se automaticky nulují a přeskakují.<br>Po opuštění pořízení se automaticky provede vysoučtování do řádku
+	<u><i>11. 
+	zemědělská půda celkem</i></u> a doplnění řádku <i><u>18. Půda mimo LFA</u>
+	</i>(rozdíl mezi zemědělskou půdou celkem a výměrami LFA).<br>Tip:<br>Klávesou 
+	<b>&lt;Alt F5&gt;</b> lze automaticky naplnit tabulku podle hektarů v 
+	souboru H1.Rostlinná výroba.<br>Před tímto krokem je vhodné vyplnit sloupec 
+	<u>Vlastní půda</u>, protože 
+	automatické doplnění tabulky podle sklizených hektarů rozdělí půdu podle 
+	výkonů na jednotlivé kultury a vyplní sloupec <u><i>Připachtovaná půda</i></u> 
+	po odečtení vlastní půdy.<br>V dalším kroku je načtena výměra z tabulky J. Dotace z dotačních titulů 
+	Platby za přírodní znevýhodnění LFA.<br>Je stanoven poměr mezi půdou v LFA (horská,ostatní,specifická) a výměrou luk 
+	a pastvin a to následovně:<br>
+	Tip:<br>Klávesou <b>&lt;Alt F4&gt; </b>lze zobrazit soubor Půda z minulého roku.<br>&nbsp;</font></p>
+	</li>
+	<li><font face="Arial"><b>C. Práce a pracovníci</b><br>Upraven číselník &lt;Pracovní dny&gt; pro rok 2013
+    pro výpočet přepočtených pracovníků.<br>Do řádku manažer uvádějte pouze jednu osobu. Pokud se importem napočte pro 
+	osobu manažera více přepočtených pracovníků (má více PPV), upravte.<br>&nbsp;</font></li>
+	<li><font face="Arial"><b>D1.Aktiva, D2. Pasíva</b><br>Po zkontrolování vazby PS na KS minulého roku klávesou &lt;Ctrl F10&gt; lze využít 
+	převzetí stavů z minulého roku klávesou &lt;Alt F5&gt;.<br>&nbsp;</font></li>
+	<li><font face="Arial"><b>D4. Podrobnější členění vybraných účtů<br></b>V tabulce jsou součtové řádky 
+	<u><i>025 - Spotřeba materiálu a energie celkem</i></u>,
+	<u><i>045 - Služby celkem</i></u>, <u><i>070 - Tržby za prodej vlastních výrobků 
+	a služeb</i></u>,
+	<u><i>082 - Spotřeba vlastních krmiv celkem</i></u>. Tyto součtové řádky nemusíte vyplňovat, po opuštění 
+	pořízení automaticky proběhne vysoučtování a doplnění těchto řádků.<br>Ručně je potřeba upravit či doplnit následující řádky:<br>&nbsp;</font><ul>
+		<li><font face="Arial"><u><i>005, 006, 007, 008 - Spotřeby nakoupených 
+		krmiv</i></u> - 
+		řádky jsou naplněny z účtu 501050 podle výkonů (skot,ovce,kozy 700 až 
+		719 a 750 až 769, prasata 720 až 729, drůbež a ostatní 730 až 749 a 770 
+		až 799). Pokud je směrována spotřeba krmiv na jiné výkony, je doplněno 
+		do řádku 006 - spotřeba objemných krmiv pro skot. Do tohoto řádku se u 
+		podniků, které účtují na výkon 870 (výroba krmných směsí), dostane 
+		nakoupené krmivo (komponenty do krmných směsí) z tohoto výkonu. Řádek 
+		006 je nutno rozdělit mezi řádky 005, 007 a 008.<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>021-Nakoupené&nbsp; hrozny pro výrobu vína</i></u> - 
+		řádek není importem naplňován<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>026-Opravy a udržování budov</i></u> - 
+		řádek není importem naplňován<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>027-Opravy a udržování strojů</i></u> - 
+		importem je naplněn účtem 511 (tedy i náklady na opravy staveb). Nutno 
+		rozdělit na řádek 026 a 027. <br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>029-Výdaje na užití soukromého vozidla k 
+		pracovním účelům</i></u> - řádek není importem naplňován. Pokud jsou v 
+		řádku <u><i>028-Cestovné</i></u> uvedeny nějaké náklady z účtu 512, 
+		můžete část nebo vše vykázat i na ř. 029<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>030-Agrotechnické a agrochemické služby</i></u> - 
+		importem naplňován z účtů 5183xx a 5184xx. Pokud na těchto účtech jsou 
+		obsaženy i</font><font FACE="Times New Roman" SIZE="2"> S</font><font face="Arial">pecifické 
+		služby související s RV (balení či marketingové služby, sušení, služby 
+		související s ochrannou zboží, krátkodobý pronájem budov nebo půdy 
+		využitých při zpracování a prodeji plodin), je nutno oddělit z tohoto 
+		řádku a doplnit do řádku <u><i>031-Ostatní specifické služby pro RV<br>&nbsp;</i></u></font></li>
+		<li><font face="Arial"><u><i>032-Plemenářské a veterinární služby</i></u> - 
+		importem naplňován z účtů 5185xx a 5186xx. Pokud na těchto účtech jsou 
+		obsaženy i</font><font FACE="Times New Roman" SIZE="2"> S</font><font face="Arial">pecifické 
+		služby související s ŽV (desinfekce, sanace, laboratorní rozbory, 
+		poplatky za registraci v plemenných knihách, odvoz uhynulých zvířat, 
+		krátkodobý pronájem stájí a skladů pro ŽV), je nutno oddělit z tohoto 
+		řádku a doplnit do řádku <u><i>033-Ostatní specifické služby pro ŽV<br>&nbsp;</i></u></font></li>
+		<li><font face="Arial"><u><i>034-Náklady na půdní rozbory</i></u> - 
+		řádek není importem naplňován<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>035-Nájemné budov</i></u> - řádek není 
+		importem naplňován<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>036-z toho finanční pronájem budov</i></u> 
+		- řádek není importem naplňován<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>037-Nájemné strojů</i></u> - řádek není 
+		importem naplňován<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>038-z toho finanční pronájem strojů</i></u> 
+		- řádek není importem naplňován<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>039-Nájemné z pozemků (pachtovné)</i></u> 
+		- naplněno účtem 518891<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>040-Nájemné za ostatní plochy, vodní 
+		plochy, les</i></u> - řádek 
+		není importem naplňován. Asi bude potřeba poměrem rozdělit celkové 
+		nájemné z pozemků z řádku 036 podle výměry<br>Tip:<br>Spustit kontroly vazeb 
+		<b>&lt;F10&gt;</b>, kontrola <b>38-Nájemné za ostatní a vodní plochy, 
+		lesy.<br></b>Kontrola zjistí z tabulky Půda celkovou výměru 
+		pronajímaných pozemků. Vypočte průměrné nájemné na 1 hektar pronajaté 
+		půdy. Vynásobí výměru pronajatých ostatních a vodních ploch a lesů 
+		průměrným nájemným a výsledek uloží do sloupce C.<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>041-Nájemné za ornou půdu</i></u> - řádek 
+		není importem naplňován. Asi bude potřeba poměrem rozdělit celkové 
+		nájemné z pozemků z řádku 036 podle výměry<br>Tip:<br>Spustit kontroly vazeb 
+		<b>&lt;F10&gt;</b>, kontrola <b>38-Nájemné za ornou 
+		půdu.<br></b>Kontrola zjistí z tabulky Půda celkovou výměru 
+		pronajímaných pozemků. Vypočte průměrné nájemné na 1 hektar pronajaté 
+		půdy. Vynásobí výměru pronajaté orné půdy průměrným nájemným a výsledek 
+		uloží do sloupce C.<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>042-Nájemné za louky a pastviny</i></u> - 
+		řádek není importem naplňován. Asi bude potřeba poměrem rozdělit celkové 
+		nájemné z pozemků z řádku 036 podle výměry<br>Tip:<br>Spustit kontroly vazeb 
+		<b>&lt;F10&gt;</b>, kontrola <b>38-Nájemné za louky a 
+		pastviny.<br></b>Kontrola zjistí z tabulky Půda celkovou výměru 
+		pronajímaných pozemků. Vypočte průměrné nájemné na 1 hektar pronajaté 
+		půdy. Vynásobí výměru pronajatých luk a pastvin průměrným nájemným a 
+		výsledek uloží do sloupce C.<br>Kontrola <b>38-Nájemné z pozemků</b> hlídá, aby součet ř. 040 až 042 byl 
+		roven celkovému nájemnému.<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>043-Nájemné ostatního majetku</i></u> 
+		-&nbsp; importem není naplněno<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>047-Daň z nemovitostí - z vlastních pozemků</i></u> 
+		-&nbsp; importem není naplněno<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>048-Daň z nemovitostí z vlastních staveb</i></u> 
+		- naplněno orientačně účtem 5326xx. Hodnotu je nutno upravit, protože 
+		může obsahovat daň z nemovitostí i za pronajaté pozemky. Vyplňuje se 
+		pouze daň z <b>vlastních pozemků</b>.<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>049-Pojištění budov</i></u> - řádek není 
+		naplňován.&nbsp; Zkontrolovat a upravit.<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>050-Pojištění zemědělské výroby</i></u> - 
+		naplněno účty 5482xx a 5682xx z výkonů 100 až 799,960,961. Zkontrolovat 
+		a upravit. <br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>051-Pojištění ostatní</i></u> - naplněno 
+		účty 5482xx a 5682xx z výkonů 800 až 959,962 až 999.&nbsp; Zkontrolovat 
+		a upravit.<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>053-Úroky z úvěrů na stavby</i></u> - 
+		naplněno účtem 562. Nutno rozdělit do řádku 054 a 055.<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>054-Úroky na pozemky</i></u> - není 
+		naplněno. <br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>055-Úroky na ostatní majetek</i></u> - není 
+		naplněno.<br>Úroky jsou kontrolovány na ř. 043 ve výkazu Zisky a ztráty. Protože 
+		tento výkaz je zaokrouhlen na tisíce, je nutno tento řádek upravit tak, 
+		aby úroky z ř. 053+054+055 byly celé číslo.<br>Tip:<br>Spustit kontroly vazeb 
+		<b>&lt;F10&gt;</b>, kontrola <b>40-Úroky DOPL x VZZ, 
+		&lt;F10-úprava dat&gt;, </b>najet na položku <b>055, &lt;Enter&gt;.<br>&nbsp;</b></font></li>
+		<li><font face="Arial"><u><i>061-Tržby za prodej výrobků potravinářské 
+		výroby</i></u> - není naplněno, nutno ručně oddělit od tržeb z jiných 
+		činností<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>063-Tržby ze služeb ze zemědělské a lesní činnosti</i></u> 
+		- naplněno účtem 6021xx, 6024xx. Nutno zkontrolovat, zda nejsou i na jiných 
+		analytikách 602<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>064-Tržby za smluvní výkrm</i></u> - 
+		naplněno účtem 6012xx-tržby ze služeb ŽV. Nutno zkontrolovat, zda 
+		obsahuje pouze smluvní výkrm.<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>065-Tržby z agroturistiky</i></u> - 
+		nenaplněno, ručně.<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>067,068,069-příjmy z pronájmu budov, 
+		pozemků, strojů</i></u> - naplněno účty 6027xx a 6028xx. Nutno 
+		zkontrolovat, upravit.<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>071- Tržby za zboží z aktivace výrobků RV
+		</i></u>- nenaplněno, ručně.<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>072- Tržby za zboží z aktivace výrobků ŽV
+		</i></u>- nenaplněno, ručně.<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>074- Aktivace výrobků RV </i></u>- naplněno 
+		účty 621 a 622 z výkonů 100 až 699<br>Kontrola <b>22-Aktivace RV </b>porovná hodnotu aktivace v doplňkových 
+		údajích a&nbsp; hodnotu předání do dalšího zpracování nebo do jídelny z 
+		bilancí RV (položka 18-předání do zpracování a maloobchodu a 20-spotřeba 
+		v jídelně). Pokud je vyplněno v doplňkových údajích, mělo by být 
+		vyplněno i v bilancích a naopak.<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>075- Aktivace výrobků ŽV </i></u>- naplněno 
+		účty 621 a 622 z výkonů 700 až 799<br>Kontrola <b>22-Aktivace ŽV </b>porovná hodnotu aktivace v doplňkových údajích a&nbsp; hodnotu předání 
+		do dalšího zpracování nebo do jídelny z bilancí ŽV&nbsp; a bilancí 
+		ostatních výrobků (položka 18-předání do zpracování a maloobchodu, 
+		20-spotřeba v jídelně, 23-předání do zpracování a 26-spotřeba v 
+		jídelně). Pokud je vyplněno v doplňkových údajích, mělo by být vyplněno 
+		i v bilancích a naopak.<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>076- Aktivace zvířat </i></u>- naplněno 
+		účtem 624<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>077- Aktivace materiálu, zboží, 
+		dlouhodobého majetku a ostatní aktivace </i></u>- naplněno z účtů 
+		621,622,624 z výkonů mimo řádek 074 až 076<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>078-Náhrady mank a škod </i></u>- naplněno 
+		z účtů 6481xx a 6881xx. Nutno zkontrolovat. Je prováděna kontrola na 
+		výkaz Zisky a ztráty na řádky ostatní provozní a mimořádné náklady.<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>079-Dotace a podpory provozního charakteru
+		</i></u>- naplněno z účtů 6487xx.<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>080-Spotřeba vlastních osiv a sadby</i></u> - naplněno z účtu 613131. Do tohoto řádku bude nutno vyplnit spotřebu vykázanou v tabulkách H1. 
+		Rostlinná výroba a H2. Produkce ostatních výrobků. Protože v těchto tabulkách bude jako 
+	spotřeba osiv vykázáno i to, co je předáno do pomocné 
+	výroby, bude se skutečná spotřeba od takto fiktivně vykázané lišit. Vysčítané spotřeby osiv 
+		můžete zjistit přes kontrolu vazeb č. 29. Tyto hodnoty je pak třeba 
+		doplnit.<br>Nutno 
+		upravit podle spotřeb vykázaných v tabulkách G1., H1. a H2.<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>081-Spotřeba vlastních hnojiv</i></u> - naplněno z účtu 613132. Nutno 
+		upravit podle spotřeb vykázaných v tabulce H2.Produkce ostatních 
+		výrobků. Vysčítané spotřeby hnojiv můžete zjistit přes kontrolu vazeb 
+	č. 29. Tuto hodnotu je pak třeba doplnit.<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>082-Spotřeba vlastních krmiv celkem</i></u> - 
+		nevyplňovat - součtový řádek.<br>&nbsp;</font></li>
+		<li><font face="Arial"><i><u>083-085 - Spotřeba vlastních krmiv podle 
+		druhů zvířat</u> - </i>naplněno z účtů 613231 a 613233 a rozděleno na 
+		tyto 3 řádky podle výkonů, kam je směrována spotřeba. Nutno upravit 
+		podle spotřeb vykázaných v tabulkách H1. a H2. Vysčítané spotřeby krmiv 
+		můžete zjistit přes kontrolu vazeb č. 29. Takto zjištěnou spotřebu krmiv 
+		je nutno rozdělit do řádků 081 až 083. Ze skutečných spotřeb alespoň 
+		zjistíte poměr spotřebovaného krmiva mezi druhy zvířat.<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>087-Konečný stav výrobků RV</i></u> - 
+		naplněn zůstatkem účtu 1231??<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>088-Konečný stav výrobků ŽV</i></u> - 
+		naplněn zůstatkem účtu 1232??<br>&nbsp;</font></li>
+		<li><font face="Arial"><u><i>089-Konečný stav zvířat</i></u> - 
+		naplněn zůstatkem účtu 124???<br>&nbsp;</font></li>
+		<li><font face="Arial"><i><u>091 až 093-Změna stavu výrobků RV, ŽV a 
+		ostatních výrob</u></i> - naplněno z rozdílu obratů stran účtů 123. Je 
+		kontrolováno na výkaz zisky a ztráty (kontrola 21-Změna stavu.zásob VZZ 
+		x doplňkové údaje). Pokud v kontrole vyjde rozdíl, došlo u zásob k 
+		porušení účtování změny stavu při příjmu nebo výdeji (výdej na 
+		propagaci, výdej na restituce a vypořádací podíly a pod.) V takovém 
+		případě je vhodné spustit kontrolu 20-Změna stavu výrobků XX a upravit 
+		řádek 091 až 093 podle údaje zjištěného z bilancí RV&nbsp; a výrobků.<br>
+		<br>.</font></li>
+	</ul></li>
+	<li><font face="Arial"><b>E1. Dlouhodobý majetek</b><br>Pro zkontrolování vazby PS na KS minulého roku lze klávesou &lt;Ctrl F10&gt; 
+	spustit kontroly. Pokud vyjde rozdíl ve výsledku kontroly, lze klávesou 
+	&lt;F10&gt; zobrazit definici kontroly, postavit se na řádek s definicí, kam chci 
+	doplnit rozdíl a klávesou &lt;Enter&gt; potvrdit.<br>&nbsp;</font></li>
+	<li><font face="Arial"><b>E2. Finanční pronájem<br></b>Tabulka zrušena.<br>&nbsp;</font></li>
+	<li><font face="Arial"><b>E3. Kvóty</b><br>Pro zkontrolování vazby PS na KS minulého roku lze klávesou &lt;Ctrl F10&gt; 
+	spustit kontroly. Pokud vyjde rozdíl ve výsledku kontroly, lze klávesou 
+	&lt;F10&gt; zobrazit definici kontroly, postavit se na řádek s definicí, kam chci 
+	doplnit rozdíl a klávesou &lt;Enter&gt; potvrdit.<br>Klávesou <b>&lt;Alt F4&gt;</b> lze zobrazit soubor z minulého roku.<br>Klávesou 
+	<b>&lt;Alt F5&gt; </b>lze po zadání množství kvóty v kg spustit přepočet na 
+	litry.<br>&nbsp;</font></li>
+	<li><font face="Arial"><b>F Závazky <br></b>Kontrolu PS na KS minulého roku lze spustit klávesou &lt;Ctrl F10&gt;<b>.<br>
+	</b>Klávesou <b>&lt;Alt F5&gt;</b> lze převzít konečné stavy z minulého roku a doplnit je 
+	do PS. <br>&nbsp;</font></li>
+	<li><font face="Arial"><b>G1. Zvířata</b> <br>Některé výkony 
+	zvířat obsahují kategorie mladých zvířat i dospělých zvířat. Jedná se např. 
+	o <u><i>032 - ostatní krávy</i></u>, <u><i>044 - chovné prasnice</i></u>, <u>
+	<i>046 - ostatní prasata</i></u>. Při importu se do hodnoty počátečního a 
+	konečného stavu načítají pro mladá zvířata zůstatkové ceny, pro dospělá 
+	zvířata pořizovací ceny.<br>Pokud budete chtít využívat pro tyto výkony funkci 
+	<b>&lt;Ctrl F10 - Úpravy&gt;&nbsp; &lt;2. Rozdělení výkonu&gt; </b>nebo <b>
+	&lt;3.Oddělení pohybů&gt;</b>, je nutno počítat s tím, že po provedení akce se 
+	dopočítá konečný stav v Kč z počátečního stavu + příjmy - výdeje.<br>Tím se konečný stav změní od původně naimportovaného a je nutno ho upravit 
+	ručně.<br><font color="#FF0000"><b>Nově</b></font><br>
+	Nový kód <b>&lt;Ekologicky chované zvíře&gt; </b>- není naplňován. Pokud se u 
+	některé kategorie zvířat vyskytuje, je nutno dopořídit řádek s položkou 
+	obratu 01 - Ekologicky chované zvíře a do množství vyplnit 1. <br>
+	Pokud nedej bůh u některé kategorie 
+	zvířat dojde k nakumulování ekologických a konvenčních zvířat, je nutno 
+	rozdělit výkon. Program je upraven stejným způsobem, jako u rostlinné 
+	výroby doplněním pole <b>&lt;S - sloupec&gt;.</b> Tím bude umožněno pro jeden 
+	výkon vykázat oba způsoby odchovu.&nbsp;&nbsp; <br>&nbsp;</font></li>
+	<li><font face="Arial"><b>G2. Smluvní výkrm<br></b>Není automaticky naplňována.&nbsp;Nutno 
+	ručně. <br>&nbsp;</font></li>
+	<li><font face="Arial"><b>H1. Rostlinná výroba</b> <br>Jenom pro 
+	rekapitulaci úprav z roku 2008.<br>Byla vypuštěna položka obratu 
+	<u><i>14 - spotřeba ostatní</i></u>. V minulých letech v ní 
+	byly vykazovány spotřeby zrna a zelené hmoty pro další zpracování v 
+	pomocných činnostech (silážování, senážování, výroba sena&nbsp; a krmných 
+	směsí). Tyto spotřeby jsou vykazovány jako spotřeba osiv nebo 
+	spotřeba krmiv, podle toho jak budou v konečné fázi spotřebovány.<br><b><i>Příklad 1</i></b><br>Pšenice předaná do pomocné výroby za účelem výroby krmných směsí (např. na 
+	výkon 872) bude uvedena v položce <u><i>12-spotřeba krmiv</i></u>.<br><b><i>Příklad 2</i></b><br>Pšenice předaná do pomocné výroby za účelem výroby osiv (např. na výkon 888) 
+	bude uvedena v položce <u><i>10-spotřeba osiv</i></u>.<br><br>Do položky obratu 14 byly načítány při importu ze zásob DP 60..63. Toto bylo 
+	definováno v číselníku <b>&lt;Druhy pohybu zásob&gt;</b>. Z číselníku byla v roce 
+	2008 položka 14 zrušena.<br>&nbsp;</font><table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 429px">
+		<colgroup><col width="47" style="width: 35pt">
+			<col width="170" style="width: 128pt">
+			<col width="105" style="width: 79pt">
+			<col width="101" style="width: 76pt">
+		</colgroup>
+		<tr height="44" style="height: 33.0pt">
+			<td style="height: 24px; font-weight: 700; text-align: center; vertical-align: middle; white-space: normal; color: black; font-size: 11.0pt; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" bgcolor="#999966" colspan="4">
+			<font face="Times New Roman"><b>Číselník &lt;Druhy pohybu zásob&gt;</b></font></td>
+		</tr>
+		<tr height="44" style="height: 33.0pt">
+			<td style="height: 64px; width: 32px; font-weight: 700; text-align: center; vertical-align: middle; white-space: normal; color: black; font-size: 11.0pt; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" bgcolor="#C0C0C0">DP</td>
+			<td style="width: 176px; font-weight: 700; text-align: center; vertical-align: middle; white-space: normal; color: black; font-size: 11.0pt; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" bgcolor="#C0C0C0" height="64">Název</td>
+			<td style="width: 88px; font-weight: 700; text-align: center; vertical-align: middle; white-space: normal; color: black; font-size: 11.0pt; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" bgcolor="#C0C0C0" height="64">Nápočet do bilancí RV</td>
+			<td style="width: 123px; font-weight: 700; text-align: center; vertical-align: middle; white-space: normal; color: black; font-size: 11.0pt; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" bgcolor="#C0C0C0" height="64">Nápočet do bilancí pomocných výrob</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" align="center" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="32">60</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="176">Spotřeba ostatní</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="88" align="center">04,10,12</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="123" align="center">04,10,12</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" align="center" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="32">61</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="176">Spotřeba krmiv a osiv</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="88" align="center">04,10,12</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="123" align="center">04,10,12</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" align="center" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="32">62</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="176">Spotřeba staveb.materiálu</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="88" align="center">04,10,12</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="123" align="center">04,10,12</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" align="center" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="32">63</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="176">Spotřeba náhradních dílů</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="88" align="center">04,10,12</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="123" align="center">04,10,12</td>
+		</tr>
+	</table>
+	<p><font face="Arial">Položky uvedené v číselníku <b>&lt;Spotřeby zásob&gt;</b> 
+	jsou 
+	testovány, na který výkon je spotřeba směrována. Tím je určena položka&nbsp;obratu.&nbsp;V tomto číselníku byla původní položka 14 změněna na 12-spotřeba krmiv, 
+	protože v naprosté většině případů podniky výrobu osiv v pomocné výrobě 
+	nemají.</font></p>
+	<table border="1" cellpadding="0" cellspacing="0" width="373" style="border-collapse:
+ collapse;width:280pt" height="191">
+		<colgroup><col width="61" style="width: 46pt">
+			<col width="170" style="width: 128pt">
+			<col width="71" span="2" style="width: 53pt">
+		</colgroup>
+		<tr height="44" style="height: 33.0pt">
+			<td style="height: 27px; font-weight: 700; text-align: center; vertical-align: middle; white-space: normal; color: black; font-size: 11.0pt; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" bgcolor="#999966" colspan="4">
+			<font face="Times New Roman"><b>Číselník &lt;Spotřeby zásob&gt;</b></font></td>
+		</tr>
+		<tr height="44" style="height: 33.0pt">
+			<td width="61" style="height: 37px; width: 46pt; font-weight: 700; text-align: center; vertical-align: middle; white-space: normal; color: black; font-size: 11.0pt; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" bgcolor="#C0C0C0">Položka RV</td>
+			<td width="170" style="width: 128pt; font-weight: 700; text-align: center; vertical-align: middle; white-space: normal; color: black; font-size: 11.0pt; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" bgcolor="#C0C0C0" height="37">Název</td>
+			<td width="71" style="width: 53pt; font-weight: 700; text-align: center; vertical-align: middle; white-space: normal; color: black; font-size: 11.0pt; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" bgcolor="#C0C0C0" height="37">Výkon Od</td>
+			<td width="71" style="width: 53pt; font-weight: 700; text-align: center; vertical-align: middle; white-space: normal; color: black; font-size: 11.0pt; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" bgcolor="#C0C0C0" height="37">Výkon Do</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td style="height: 22px; text-align: center; vertical-align: middle; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">10</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" height="22">Spotřeba-osivo</td>
+			<td align="center" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" height="22">100</td>
+			<td align="center" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" height="22">699</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td style="height: 21px; text-align: center; vertical-align: middle; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">10</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" height="21">Spotřeba-osivo</td>
+			<td align="center" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" height="21">960</td>
+			<td align="center" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" height="21">960</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td style="height: 19px; text-align: center; vertical-align: middle; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">12</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" height="19">Spotřeba-krmivo</td>
+			<td align="center" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" height="19">700</td>
+			<td align="center" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" height="19">799</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td style="height: 21px; text-align: center; vertical-align: middle; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">12</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" height="21">Spotřeba-krmivo</td>
+			<td align="center" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" height="21">800</td>
+			<td align="center" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" height="21">959</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td style="height: 23px; text-align: center; vertical-align: middle; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">12</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" height="23">Spotřeba-krmivo</td>
+			<td align="center" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" height="23">961</td>
+			<td align="center" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" height="23">961</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td style="height: 19px; text-align: center; vertical-align: middle; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">12</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" height="19">Spotřeba-krmivo</td>
+			<td align="center" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" height="19">962</td>
+			<td align="center" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" height="19">999</td>
+		</tr>
+	</table>
+	<p><font face="Arial">V tabulce H1. Rostlinná výroba jsou zavedeny 
+	kódy kompletnosti dat 5 - mladé porosty a 6 - nebyla produkce z důvodu 
+	živelné pohromy. Při případném použití těchto nových kódů dojde k situaci, 
+	že jeden výkon (plodina) bude na portálu FADN uveden víckrát (ve více 
+	sloupcích).</font></p>
+	<table border="1" width="903"><!-- MSTableType="nolayout" --><tr>
+		<td bgcolor="#FFE7B6" colspan="2" rowspan="2">&nbsp;</td>
+		<td bgcolor="#FFE7B6" align="center" width="5%">
+		<font face="Arial" size="2">PŠENICE OZIMÁ</font></td>
+		<td bgcolor="#FFE7B6" align="center" width="4%">
+		<font face="Arial" size="2">PŠENICE OZIMÁ</font></td>
+		<td bgcolor="#FFE7B6" align="center" width="4%">&nbsp;</td>
+		<td bgcolor="#FFE7B6" align="center" width="4%">&nbsp;</td>
+		<td bgcolor="#FFE7B6" align="center" width="44">&nbsp;</td>
+		<td bgcolor="#FFE7B6" align="center" width="30">&nbsp;</td>
+		<td bgcolor="#FFE7B6" align="center" width="38">&nbsp;</td>
+		<td bgcolor="#FFE7B6" align="center" width="37">&nbsp;</td>
+		<td bgcolor="#FFE7B6" align="center" width="4%">ŘEPKA</td>
+		<td bgcolor="#FFE7B6" align="center" width="4%">ŘEPKA</td>
+		</tr>
+		<tr>
+			<td bgcolor="#FFE7B6" align="center" width="5%" height="25">
+			<font face="Arial" size="2">1</font></td>
+			<td bgcolor="#FFE7B6" align="center" width="4%" height="25">
+			<font face="Arial" size="2">2</font></td>
+			<td bgcolor="#FFE7B6" align="center" width="4%" height="25">3</td>
+			<td bgcolor="#FFE7B6" align="center" width="4%" height="25">4</td>
+			<td bgcolor="#FFE7B6" align="center" width="44" height="25">5</td>
+			<td bgcolor="#FFE7B6" align="center" width="30" height="25">6</td>
+			<td bgcolor="#FFE7B6" align="center" width="38" height="25">7</td>
+			<td bgcolor="#FFE7B6" align="center" width="37" height="25">8</td>
+			<td bgcolor="#FFE7B6" align="center" width="4%" height="25">9</td>
+			<td bgcolor="#FFE7B6" align="center" width="4%" height="25">10</td>
+		</tr>
+		<tr>
+			<td bgcolor="#FFE7B6" width="2%"><font face="Arial" size="2">1</font></td>
+			<td bgcolor="#FFE7B6" width="45%"><font face="Arial" size="2"><b>Charakteristika způsobu pěstování (kód)<br>Vyplňte, prosím, číslo vhodného kódu:<br>1</b> Nezavlažovaná hlavní plodina<br>
+			<b>3</b> Nezavlažovaná následná plodina (meziplodina)<br><b>6</b> Zavlažovaná hlavní plodina<br>
+			<b>7</b> Zavlažovaná následná plodina (meziplodina)<br><b>4</b> Zahradnictví (pěstování zeleniny a květin)<br>
+			<b>5</b> Plodiny pod krytem<br><b>10</b> Energetická plodina<br>&nbsp;</font></td>
+			<td bgcolor="#FFF2D7" width="5%" align="right"><b>1</b></td>
+			<td bgcolor="#FFF2D7" width="4%" align="right"><b>1</b></td>
+			<td bgcolor="#FFF2D7" width="4%" align="right">.</td>
+			<td bgcolor="#FFF2D7" width="4%" align="right">&nbsp;</td>
+			<td bgcolor="#FFF2D7" width="44" align="right">&nbsp;</td>
+			<td bgcolor="#FFF2D7" width="30" align="right">&nbsp;</td>
+			<td bgcolor="#FFF2D7" width="38" align="right">&nbsp;</td>
+			<td bgcolor="#FFF2D7" width="37" align="right">&nbsp;</td>
+			<td bgcolor="#FFF2D7" width="4%" align="right"><b>1</b></td>
+			<td bgcolor="#FFF2D7" width="4%" align="right"><b>1</b></td>
+		</tr>
+		<tr>
+			<td bgcolor="#FFE7B6" width="2%"><font face="Arial" size="2">2</font></td>
+			<td bgcolor="#FFE7B6" width="45%"><font face="Arial" size="2"><b>Kompletnost dat (kód)<br>Vyplňte, prosím, číslo vhodného kódu:<br>3</b> nelze vyplnit produkci: 
+			<b>školky, zelené hnojení, úhor, 
+			biopásy</b><br><b>4</b> nelze vyplnit produkci ani výměru:<b>zásoba z předchozího 
+			roku</b> (v aktuálním roce není plodina pěstována)<br><b>5</b> nelze vyplnit produkci: 
+			<b>mladé porosty</b><br><b>6</b> nelze vyplnit produkci: <b>v aktuálním roce nebyla produkce</b> 
+			(např. živelné pohromy, extrémní počasí)</font></td>
+			<td bgcolor="#FFF2D7" width="5%" align="right"><b>0</b></td>
+			<td bgcolor="#FFF2D7" width="4%" align="right"><b>6</b></td>
+			<td bgcolor="#FFF2D7" width="4%" align="right">.<p>.</td>
+			<td bgcolor="#FFF2D7" width="4%" align="right">&nbsp;</td>
+			<td bgcolor="#FFF2D7" width="44" align="right">&nbsp;</td>
+			<td bgcolor="#FFF2D7" width="30" align="right">&nbsp;</td>
+			<td bgcolor="#FFF2D7" width="38" align="right">&nbsp;</td>
+			<td bgcolor="#FFF2D7" width="37" align="right">&nbsp;</td>
+			<td bgcolor="#FFF2D7" width="4%" align="right"><b>0</b></td>
+			<td bgcolor="#FFF2D7" width="4%" align="right"><b>6</b></td>
+		</tr>
+		<tr>
+			<td bgcolor="#FFE7B6" width="2%"><font face="Arial" size="2">3</font></td>
+			<td bgcolor="#FFE7B6" width="45%"><font face="Arial" size="2">Sklizňová plocha (ha)</font></td>
+			<td bgcolor="#FFF2D7" width="5%" align="right"><b>363</b></td>
+			<td bgcolor="#FFF2D7" width="4%" align="right"><b>20</b></td>
+			<td bgcolor="#FFF2D7" width="4%" align="right">.</td>
+			<td bgcolor="#FFF2D7" width="4%" align="right">&nbsp;</td>
+			<td bgcolor="#FFF2D7" width="44" align="right">&nbsp;</td>
+			<td bgcolor="#FFF2D7" width="30" align="right">&nbsp;</td>
+			<td bgcolor="#FFF2D7" width="38" align="right">&nbsp;</td>
+			<td bgcolor="#FFF2D7" width="37" align="right">&nbsp;</td>
+			<td bgcolor="#FFF2D7" width="4%" align="right"><b>150</b></td>
+			<td bgcolor="#FFF2D7" width="4%" align="right"><b>10</b></td>
+		</tr>
+	</table>
+	<p><font face="Arial">Z tohoto důvodu bylo do tabulky H1. Rostlinná 
+	výroba<b> </b>doplněno číslo sloupce, které určuje pořadí sloupce v rámci 
+	výkonu. Sloupce se číslují od nuly. Údaj se v XML souboru ukládá do proměnné
+	<b>&lt;KodP&gt;.</b> Pro jediný výskyt výkonu se tedy používá číslo sloupce 0 (&lt;KodP&gt;000&lt;/KodP&gt;).
+	<br>Na příkladu je uvedena situace, že podnik měl zasetu pšenici na 383 ha 
+	(363+20 ha). Na 363 hektarech byla provedena sklizeň a je u nich kompletně 
+	vykázána bilance výroby. Na 20 hektarech ke sklizni nedošlo z důvodu živelné 
+	pohromy.</font></p>
+	<table border="0"><!-- MSTableType="nolayout" --><tr>
+		<td bgcolor="#0000FF" colspan="2"><font color="#FFFFFF"><b>Produkt 
+			RV</b></font></td>
+		<td bgcolor="#0000FF" align="center" width="9%"><b>
+		<font face="Arial" size="2" color="#FFFFFF">Sloupec</font></b></td>
+		<td bgcolor="#0000FF" align="center" width="30%" colspan="2">
+		<p align="left"><font color="#FFFFFF"><b>Položka RV</b></font></td>
+		<td bgcolor="#0000FF" align="center" width="16%"><font color="#FFFFFF">
+		<b>Množství</b></font></td>
+		<td bgcolor="#0000FF" align="center" width="18%"><font color="#FFFFFF">
+		<b>Kč</b></font></td>
+		</tr>
+		<tr>
+			<td bgcolor="#0000FF" width="3%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">100</font></b></td>
+			<td bgcolor="#0000FF" width="14%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">PŠENICE OZIMÁ </font>
+			</b></td>
+			<td bgcolor="#0000FF" width="9%" align="center"><b>
+			<font color="#FFFFFF">0</font></b></td>
+			<td bgcolor="#0000FF" width="3%" align="right"><b>
+			<font color="#FFFFFF">01</font></b></td>
+			<td bgcolor="#0000FF" width="27%" align="left"><b>
+			<font color="#FFFFFF">Kód způsobu pěstování</font></b></td>
+			<td bgcolor="#0000FF" width="16%" align="right"><b>
+			<font color="#FFFFFF">1.00</font></b></td>
+			<td bgcolor="#0000FF" width="18%" align="right"><b>
+			<font color="#FFFFFF">0.00</font></b></td>
+		</tr>
+		<tr>
+			<td bgcolor="#0000FF" width="3%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">100</font></b></td>
+			<td bgcolor="#0000FF" width="14%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">PŠENICE OZIMÁ </font>
+			</b></td>
+			<td bgcolor="#0000FF" width="9%" align="center"><b>
+			<font color="#FFFFFF">0</font></b></td>
+			<td bgcolor="#0000FF" width="3%" align="right"><b>
+			<font color="#FFFFFF">02</font></b></td>
+			<td bgcolor="#0000FF" width="27%" align="left"><b>
+			<font color="#FFFFFF">Kompletnost dat </font></b></td>
+			<td bgcolor="#0000FF" width="16%" align="right"><b>
+			<font color="#FFFFFF">0.00</font></b></td>
+			<td bgcolor="#0000FF" width="18%" align="right"><b>
+			<font color="#FFFFFF">0.00</font></b></td>
+		</tr>
+		<tr>
+			<td bgcolor="#0000FF" width="3%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">100</font></b></td>
+			<td bgcolor="#0000FF" width="14%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">PŠENICE OZIMÁ </font>
+			</b></td>
+			<td bgcolor="#0000FF" width="9%" align="center"><b>
+			<font color="#FFFFFF">0</font></b></td>
+			<td bgcolor="#0000FF" width="3%" align="right"><b>
+			<font color="#FFFFFF">03</font></b></td>
+			<td bgcolor="#0000FF" width="27%" align="left"><b>
+			<font color="#FFFFFF">Sklizňová plocha (Ha 2 d.m.) </font></b></td>
+			<td bgcolor="#0000FF" width="16%" align="right"><b>
+			<font color="#FFFFFF">363.00</font></b></td>
+			<td bgcolor="#0000FF" width="18%" align="right"><b>
+			<font color="#FFFFFF">0.00</font></b></td>
+		</tr>
+		<tr>
+			<td bgcolor="#0000FF" width="3%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">100</font></b></td>
+			<td bgcolor="#0000FF" width="14%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">PŠENICE OZIMÁ </font>
+			</b></td>
+			<td bgcolor="#0000FF" width="9%" align="center"><b>
+			<font color="#FFFFFF">0</font></b></td>
+			<td bgcolor="#0000FF" width="3%" align="right"><b>
+			<font color="#FFFFFF">04</font></b></td>
+			<td bgcolor="#0000FF" width="27%" align="left"><b>
+			<font color="#FFFFFF">Počáteční stav</font></b></td>
+			<td bgcolor="#0000FF" width="16%" align="right"><b>
+			<font color="#FFFFFF">619.68</font></b></td>
+			<td bgcolor="#0000FF" width="18%" align="right"><b>
+			<font color="#FFFFFF">1425266.30</font></b></td>
+		</tr>
+		<tr>
+			<td bgcolor="#0000FF" width="3%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">100</font></b></td>
+			<td bgcolor="#0000FF" width="14%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">PŠENICE OZIMÁ </font>
+			</b></td>
+			<td bgcolor="#0000FF" width="9%" align="center"><b>
+			<font color="#FFFFFF">0</font></b></td>
+			<td bgcolor="#0000FF" width="3%" align="right"><b>
+			<font color="#FFFFFF">06</font></b></td>
+			<td bgcolor="#0000FF" width="27%" align="left"><b>
+			<font color="#FFFFFF">Vlastní produkce </font></b></td>
+			<td bgcolor="#0000FF" width="16%" align="right"><b>
+			<font color="#FFFFFF">2050.00</font></b></td>
+			<td bgcolor="#0000FF" width="18%" align="right"><b>
+			<font color="#FFFFFF">4715000.00</font></b></td>
+		</tr>
+		<tr>
+			<td bgcolor="#0000FF" width="3%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">100</font></b></td>
+			<td bgcolor="#0000FF" width="14%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">PŠENICE OZIMÁ&nbsp;
+			</font></b></td>
+			<td bgcolor="#0000FF" width="9%" align="center"><b>
+			<font color="#FFFFFF">0</font></b></td>
+			<td bgcolor="#0000FF" width="3%" align="right"><b>
+			<font color="#FFFFFF">10</font></b></td>
+			<td bgcolor="#0000FF" width="27%" align="left"><b>
+			<font color="#FFFFFF">Spotřeba-osivo </font></b></td>
+			<td bgcolor="#0000FF" width="16%" align="right"><b>
+			<font color="#FFFFFF">47.00</font></b></td>
+			<td bgcolor="#0000FF" width="18%" align="right"><b>
+			<font color="#FFFFFF">108100.00</font></b></td>
+		</tr>
+		<tr>
+			<td bgcolor="#0000FF" width="3%" height="24"><b>
+			<font face="Arial" size="2" color="#FFFFFF">100</font></b></td>
+			<td bgcolor="#0000FF" width="14%" height="24"><b>
+			<font color="#FFFFFF"><font face="Arial" size="2">PŠENICE OZIMÁ</font>
+			</font></b></td>
+			<td bgcolor="#0000FF" width="9%" align="center" height="24"><b>
+			<font color="#FFFFFF">0</font></b></td>
+			<td bgcolor="#0000FF" width="3%" align="right" height="24"><b>
+			<font color="#FFFFFF">12</font></b></td>
+			<td bgcolor="#0000FF" width="27%" align="left" height="24"><b>
+			<font color="#FFFFFF">Spotřeba-krmivo</font></b></td>
+			<td bgcolor="#0000FF" width="16%" align="right" height="24"><b>
+			<font color="#FFFFFF">532.12</font></b></td>
+			<td bgcolor="#0000FF" width="18%" align="right" height="24"><b>
+			<font color="#FFFFFF">&nbsp;1223878.30</font></b></td>
+		</tr>
+		<tr>
+			<td bgcolor="#0000FF" width="3%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">100</font></b></td>
+			<td bgcolor="#0000FF" width="14%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">PŠENICE OZIMÁ</font></b></td>
+			<td bgcolor="#0000FF" width="9%" align="center"><b>
+			<font color="#FFFFFF">0</font></b></td>
+			<td bgcolor="#0000FF" width="3%" align="right"><b>
+			<font color="#FFFFFF">16</font></b></td>
+			<td bgcolor="#0000FF" width="27%" align="left"><b>
+			<font color="#FFFFFF">Prodej</font></b></td>
+			<td bgcolor="#0000FF" width="16%" align="right"><b>
+			<font color="#FFFFFF">1240.33</font></b></td>
+			<td bgcolor="#0000FF" width="18%" align="right"><b>
+			<font color="#FFFFFF">&nbsp;2852759.00</font></b></td>
+		</tr>
+		<tr>
+			<td bgcolor="#0000FF" width="3%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">100</font></b></td>
+			<td bgcolor="#0000FF" width="14%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">PŠENICE OZIMÁ</font></b></td>
+			<td bgcolor="#0000FF" width="9%" align="center"><b>
+			<font color="#FFFFFF">0</font></b></td>
+			<td bgcolor="#0000FF" width="3%" align="right"><b>
+			<font color="#FFFFFF">22</font></b></td>
+			<td bgcolor="#0000FF" width="27%" align="left"><b>
+			<font color="#FFFFFF">Ostatní úbytky </font></b></td>
+			<td bgcolor="#0000FF" width="16%" align="right"><b>
+			<font color="#FFFFFF">0.40</font></b></td>
+			<td bgcolor="#0000FF" width="18%" align="right"><b>
+			<font color="#FFFFFF">&nbsp;920.00</font></b></td>
+		</tr>
+		<tr>
+			<td bgcolor="#0000FF" width="3%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">100</font></b></td>
+			<td bgcolor="#0000FF" width="14%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">PŠENICE OZIMÁ</font></b></td>
+			<td bgcolor="#0000FF" width="9%" align="center"><b>
+			<font color="#FFFFFF">0</font></b></td>
+			<td bgcolor="#0000FF" width="3%" align="right"><b>
+			<font color="#FFFFFF">26</font></b></td>
+			<td bgcolor="#0000FF" width="27%" align="left"><b>
+			<font color="#FFFFFF">Konečný stav</font></b></td>
+			<td bgcolor="#0000FF" width="16%" align="right"><b>
+			<font color="#FFFFFF">849.83</font></b></td>
+			<td bgcolor="#0000FF" width="18%" align="right"><b>
+			<font color="#FFFFFF">1954609.00</font></b></td>
+		</tr>
+		<tr>
+			<td bgcolor="#0000FF" width="3%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">100</font></b></td>
+			<td bgcolor="#0000FF" width="14%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">PŠENICE OZIMÁ</font></b></td>
+			<td bgcolor="#0000FF" width="9%" align="center"><b>
+			<font color="#FFFFFF">0</font></b></td>
+			<td bgcolor="#0000FF" width="3%" align="right"><b>
+			<font color="#FFFFFF">28</font></b></td>
+			<td bgcolor="#0000FF" width="27%" align="left"><b>
+			<font color="#FFFFFF">Tržby-hl.výrobek</font></b></td>
+			<td bgcolor="#0000FF" width="16%" align="right"><b>
+			<font color="#FFFFFF">0.00</font></b></td>
+			<td bgcolor="#0000FF" width="18%" align="right"><b>
+			<font color="#FFFFFF">&nbsp;4087101.50</font></b></td>
+		</tr>
+		<tr>
+			<td bgcolor="#0000FF" width="3%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">100</font></b></td>
+			<td bgcolor="#0000FF" width="14%"><b><font color="#FFFFFF">
+			<font face="Arial" size="2">PŠENICE OZIMÁ</font> </font></b></td>
+			<td bgcolor="#FF0000" width="9%" align="center"><b>
+			<font color="#FFFFFF">1</font></b></td>
+			<td bgcolor="#0000FF" width="3%" align="right"><b>
+			<font color="#FFFFFF">01</font></b></td>
+			<td bgcolor="#0000FF" width="27%" align="left"><b>
+			<font color="#FFFFFF">Kód způsobu pěstování</font></b></td>
+			<td bgcolor="#0000FF" width="16%" align="right"><b>
+			<font color="#FFFFFF">1.00</font></b></td>
+			<td bgcolor="#0000FF" width="18%" align="right"><b>
+			<font color="#FFFFFF">0.00</font></b></td>
+		</tr>
+		<tr>
+			<td bgcolor="#0000FF" width="3%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">100</font></b></td>
+			<td bgcolor="#0000FF" width="14%"><b><font color="#FFFFFF">
+			<font face="Arial" size="2">PŠENICE OZIMÁ</font> </font></b></td>
+			<td bgcolor="#FF0000" width="9%" align="center"><b>
+			<font color="#FFFFFF">1</font></b></td>
+			<td bgcolor="#0000FF" width="3%" align="right"><b>
+			<font color="#FFFFFF">02</font></b></td>
+			<td bgcolor="#0000FF" width="27%" align="left"><b>
+			<font color="#FFFFFF">Kompletnost dat </font></b></td>
+			<td bgcolor="#0000FF" width="16%" align="right"><b>
+			<font color="#FFFFFF"><span style="background-color: #FF0000">6.00</span></font></b></td>
+			<td bgcolor="#0000FF" width="18%" align="right"><b>
+			<font color="#FFFFFF">0.00</font></b></td>
+		</tr>
+		<tr>
+			<td bgcolor="#0000FF" width="3%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">100</font></b></td>
+			<td bgcolor="#0000FF" width="14%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">PŠENICE OZIMÁ </font>
+			</b></td>
+			<td bgcolor="#FF0000" width="9%" align="center"><b>
+			<font color="#FFFFFF">1</font></b></td>
+			<td bgcolor="#0000FF" width="3%" align="right"><b>
+			<font color="#FFFFFF">03</font></b></td>
+			<td bgcolor="#0000FF" width="27%" align="left"><b>
+			<font color="#FFFFFF">Sklizňová plocha (Ha 2 d.m.) </font></b></td>
+			<td bgcolor="#0000FF" width="16%" align="right"><b>
+			<font color="#FFFFFF">20.00</font></b></td>
+			<td bgcolor="#0000FF" width="18%" align="right"><b>
+			<font color="#FFFFFF">0.00</font></b></td>
+		</tr>
+	</table>
+	<p><font face="Arial"><i>Rekapitulace:</i><br>Klíčem v tabulce H1. je výkon, sloupec a položka RV.<br>Při importu dat jsou všechna data naplňována se sloupcem nula.<br>Sloupec 1 bude využíván pro ruční zadání nesklízených ploch pro mladé 
+	porosty nebo z důvodu živelné pohromy.<br>Sloupec může nabývat hodnot 0 až 9. Teoreticky lze rozdělit výkon do 10ti 
+	sloupců.<br>&nbsp;</font><h2><b>Postup pro vykazování produkce energetických plodin</b></h2>
+	<p><font face="Arial">Produkce rostlinné výroby v tabulce H1. určená pro 
+energetické využití musí být vykazována v samostatném sloupci s kódem pěstování 
+10.<br>V praxi se můžete setkat s prodejem zelené hmoty kukuřice, trávy, víceletých 
+pícnin podniku, který si z tohoto vyrobí siláž nebo senáž a použije je jako 
+surovinu do bioplynové stanice. V tabulce H1. je nutno rozdělit takovýto výkon 
+na dva sloupce. Jelikož určitě u podniků nelze zjistit, z jaké výměry je 
+sklízena produkce, která je realizována pro energetické účely, bude nutno 
+zjistit poměr produkce k energetickému využití k celkové produkci.</font></p>
+	<p><font face="Arial">Příklad:<br>Kukuřice na zeleno byla pěstována na 100 ha. Při průměrné produkci 45 t/ha se 
+sklidilo 4500 tun. Z toho bylo prodáno pro energetické účely 1350 tun t.j. 
+1350/4500*100= 30% z celkové produkce. Zbytek byl spotřebován uvnitř podniku.</font></p>
+	<p><font face="Arial"><b>Před úpravou</b></font></p>
+	<table border="0" width="647">
+		<tr>
+			<td bgColor="#0000ff" colSpan="2"><font color="#ffffff"><b>Produkt RV</b></font></td>
+			<td bgColor="#0000ff" width="7%" align="middle"><b>
+			<font color="#ffffff" size="2" face="Arial">Sloupec</font></b></td>
+			<td bgColor="#0000ff" width="31%" colSpan="2" align="middle">
+			<p align="left"><font color="#ffffff"><b>Položka RV</b></font></td>
+			<td bgColor="#0000ff" width="10%" align="middle">
+			<font color="#ffffff"><b>Množství</b></font></td>
+			<td bgColor="#0000ff" width="12%" align="middle">
+			<font color="#ffffff"><b>Kč</b></font></td>
+		</tr>
+		<tr>
+			<td bgColor="#0000ff" width="3%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">180</font></b></td>
+			<td bgColor="#0000ff" width="14%"><b>
+			<font color="#ffffff" size="2" face="Arial">KUKUŘICE</font></b></td>
+			<td bgColor="#0000ff" width="7%" align="middle"><b>
+			<font color="#ffffff">0</font></b></td>
+			<td bgColor="#0000ff" width="5%" align="right"><b>
+			<font color="#ffffff">01</font></b></td>
+			<td bgColor="#0000ff" width="26%" align="left"><b>
+			<font color="#ffffff">Kód způsobu pěstování</font></b></td>
+			<td bgColor="#0000ff" width="10%" align="right"><b>
+			<font color="#ffffff">1.00</font></b></td>
+			<td bgColor="#0000ff" width="12%" align="right"><b>
+			<font color="#ffffff">0.00</font></b></td>
+		</tr>
+		<tr>
+			<td bgColor="#0000ff" width="3%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">180</font></b></td>
+			<td bgColor="#0000ff" width="14%"><b>
+			<font color="#ffffff" size="2" face="Arial">KUKUŘICE</font></b></td>
+			<td bgColor="#0000ff" width="7%" align="middle"><b>
+			<font color="#ffffff">0</font></b></td>
+			<td bgColor="#0000ff" width="5%" align="right"><b>
+			<font color="#ffffff">02</font></b></td>
+			<td bgColor="#0000ff" width="26%" align="left"><b>
+			<font color="#ffffff">Kompletnost dat </font></b></td>
+			<td bgColor="#0000ff" width="10%" align="right"><b>
+			<font color="#ffffff">0.00</font></b></td>
+			<td bgColor="#0000ff" width="12%" align="right"><b>
+			<font color="#ffffff">0.00</font></b></td>
+		</tr>
+		<tr>
+			<td bgColor="#0000ff" width="3%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">180</font></b></td>
+			<td bgColor="#0000ff" width="14%"><b>
+			<font color="#ffffff" size="2" face="Arial">KUKUŘICE</font></b></td>
+			<td bgColor="#0000ff" width="7%" align="middle"><b>
+			<font color="#ffffff">0</font></b></td>
+			<td bgColor="#0000ff" width="5%" align="right"><b>
+			<font color="#ffffff">03</font></b></td>
+			<td bgColor="#0000ff" width="26%" align="left"><b>
+			<font color="#ffffff">Sklizňová plocha (Ha 2 d.m.) </font></b></td>
+			<td bgColor="#0000ff" width="10%" align="right">
+			<font color="#FFFFFF"><b>100.00</b></font></td>
+			<td bgColor="#0000ff" width="12%" align="right"><b>
+			<font color="#ffffff">0.00</font></b></td>
+		</tr>
+		<tr>
+			<td bgColor="#0000ff" width="3%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">180</font></b></td>
+			<td bgColor="#0000ff" width="14%"><b>
+			<font color="#ffffff" size="2" face="Arial">KUKUŘICE</font></b></td>
+			<td bgColor="#0000ff" width="7%" align="middle"><b>
+			<font color="#ffffff">0</font></b></td>
+			<td bgColor="#0000ff" width="5%" align="right"><b>
+			<font color="#ffffff">06</font></b></td>
+			<td bgColor="#0000ff" width="26%" align="left"><b>
+			<font color="#ffffff">Vlastní produkce </font></b></td>
+			<td bgColor="#0000ff" width="10%" align="right"><b>
+			<font color="#ffffff">4500.00</font></b></td>
+			<td bgColor="#0000ff" width="12%" align="right"><b>
+			<font color="#ffffff">1350000.00</font></b></td>
+		</tr>
+		<tr>
+			<td bgColor="#0000ff" width="3%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">180</font></b></td>
+			<td bgColor="#0000ff" width="14%"><b>
+			<font color="#ffffff" size="2" face="Arial">KUKUŘICE</font></b></td>
+			<td bgColor="#0000ff" width="7%" align="middle"><b>
+			<font color="#ffffff">0</font></b></td>
+			<td bgColor="#0000ff" width="5%" align="right"><b>
+			<font color="#ffffff">10</font></b></td>
+			<td bgColor="#0000ff" width="26%" align="left"><b>
+			<font color="#ffffff">Spotřeba-krmivo </font></b></td>
+			<td bgColor="#0000ff" width="10%" align="right"><b>
+			<font color="#ffffff">3150.00</font></b></td>
+			<td bgColor="#0000ff" width="12%" align="right"><b>
+			<font color="#ffffff">950000.00</font></b></td>
+		</tr>
+		<tr>
+			<td bgColor="#0000ff" width="3%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">180</font></b></td>
+			<td bgColor="#0000ff" width="14%"><b>
+			<font color="#ffffff" size="2" face="Arial">KUKUŘICE</font></b></td>
+			<td bgColor="#0000ff" width="7%" align="middle"><b>
+			<font color="#ffffff">0</font></b></td>
+			<td bgColor="#0000ff" width="5%" align="right"><b>
+			<font color="#ffffff">16</font></b></td>
+			<td bgColor="#0000ff" width="26%" align="left"><b>
+			<font color="#ffffff">Prodej</font></b></td>
+			<td bgColor="#0000ff" width="10%" align="right">
+			<font color="#FFFFFF"><b>1350.00</b></font></td>
+			<td bgColor="#0000ff" width="12%" align="right">
+			<font color="#FFFFFF"><b>405000.00</b></font></td>
+		</tr>
+		<tr>
+			<td bgColor="#0000ff" width="3%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">180</font></b></td>
+			<td bgColor="#0000ff" width="14%"><b>
+			<font color="#ffffff" size="2" face="Arial">KUKUŘICE</font></b></td>
+			<td bgColor="#0000ff" width="7%" align="middle"><b>
+			<font color="#ffffff">0</font></b></td>
+			<td bgColor="#0000ff" width="5%" align="right"><b>
+			<font color="#ffffff">28</font></b></td>
+			<td bgColor="#0000ff" width="26%" align="left"><b>
+			<font color="#ffffff">Tržby-hl.výrobek</font></b></td>
+			<td bgColor="#0000ff" width="10%" align="right"><b>
+			<font color="#ffffff">0.00</font></b></td>
+			<td bgColor="#0000ff" width="12%" align="right"><b>
+			<font color="#ffffff">&nbsp;810000.00</font></b></td>
+		</tr>
+	</table>
+	<p><font face="Arial">Výkon 180 je nutno rozdělit na dva sloupce. Sloupec 0 bude 
+vykázán s kódem pěstování 1, sloupec 1 s kódem pěstování 10. <br>Pro sloupec 0 se oddělí 30% původní sklizené plochy tj. 30 ha. Dále se oddělí 
+30% z produkce tj. 4500 *0.3=1350 tun.<br>Řádek 16-prodej a 28-tržby se přesunou do sloupce 1.<br>Pro sloupec 1 se pořídí kód způsobu pěstování 10 a doplní se vypočtená sklizňová 
+plocha a produkce.</font></p>
+	<p><font face="Arial"><b>Po úpravě</b></font></p>
+	<table border="0" width="646">
+		<tr>
+			<td bgColor="#0000ff" colSpan="2"><font color="#ffffff"><b>Produkt RV</b></font></td>
+			<td bgColor="#0000ff" width="6%" align="middle"><b>
+			<font color="#ffffff" size="2" face="Arial">Sloupec</font></b></td>
+			<td bgColor="#0000ff" width="29%" colSpan="2" align="middle">
+			<p align="left"><font color="#ffffff"><b>Položka RV</b></font></td>
+			<td bgColor="#0000ff" width="10%" align="middle">
+			<font color="#ffffff"><b>Množství</b></font></td>
+			<td bgColor="#0000ff" width="11%" align="middle">
+			<font color="#ffffff"><b>Kč</b></font></td>
+		</tr>
+		<tr>
+			<td bgColor="#0000ff" width="3%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">180</font></b></td>
+			<td bgColor="#0000ff" width="13%"><b>
+			<font color="#ffffff" size="2" face="Arial">KUKUŘICE</font></b></td>
+			<td bgColor="#0000ff" width="6%" align="middle"><b>
+			<font color="#ffffff">0</font></b></td>
+			<td bgColor="#0000ff" width="4%" align="right"><b>
+			<font color="#ffffff">01</font></b></td>
+			<td bgColor="#0000ff" width="25%" align="left"><b>
+			<font color="#ffffff">Kód způsobu pěstování</font></b></td>
+			<td bgColor="#FF0000" width="10%" align="right"><b>
+			<font color="#ffffff">1.00</font></b></td>
+			<td bgColor="#0000ff" width="11%" align="right"><b>
+			<font color="#ffffff">0.00</font></b></td>
+		</tr>
+		<tr>
+			<td bgColor="#0000ff" width="3%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">180</font></b></td>
+			<td bgColor="#0000ff" width="13%"><b>
+			<font color="#ffffff" size="2" face="Arial">KUKUŘICE</font></b></td>
+			<td bgColor="#0000ff" width="6%" align="middle"><b>
+			<font color="#ffffff">0</font></b></td>
+			<td bgColor="#0000ff" width="4%" align="right"><b>
+			<font color="#ffffff">02</font></b></td>
+			<td bgColor="#0000ff" width="25%" align="left"><b>
+			<font color="#ffffff">Kompletnost dat </font></b></td>
+			<td bgColor="#0000ff" width="10%" align="right"><b>
+			<font color="#ffffff">0.00</font></b></td>
+			<td bgColor="#0000ff" width="11%" align="right"><b>
+			<font color="#ffffff">0.00</font></b></td>
+		</tr>
+		<tr>
+			<td bgColor="#0000ff" width="3%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">180</font></b></td>
+			<td bgColor="#0000ff" width="13%"><b>
+			<font color="#ffffff" size="2" face="Arial">KUKUŘICE</font></b></td>
+			<td bgColor="#0000ff" width="6%" align="middle"><b>
+			<font color="#ffffff">0</font></b></td>
+			<td bgColor="#0000ff" width="4%" align="right"><b>
+			<font color="#ffffff">03</font></b></td>
+			<td bgColor="#0000ff" width="25%" align="left"><b>
+			<font color="#ffffff">Sklizňová plocha (Ha 2 d.m.) </font></b></td>
+			<td bgColor="#0000ff" width="10%" align="right">
+			<font color="#FFFFFF"><b>100.00</b></font></td>
+			<td bgColor="#0000ff" width="11%" align="right"><b>
+			<font color="#ffffff">0.00</font></b></td>
+		</tr>
+		<tr>
+			<td bgColor="#0000ff" width="3%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">180</font></b></td>
+			<td bgColor="#0000ff" width="13%"><b>
+			<font color="#ffffff" size="2" face="Arial">KUKUŘICE</font></b></td>
+			<td bgColor="#0000ff" width="6%" align="middle"><b>
+			<font color="#ffffff">0</font></b></td>
+			<td bgColor="#0000ff" width="4%" align="right"><b>
+			<font color="#ffffff">03</font></b></td>
+			<td bgColor="#0000ff" width="25%" align="left"><b>
+			<font color="#ffffff">Sklizňová plocha (Ha 2 d.m.) </font></b></td>
+			<td bgColor="#0000ff" width="10%" align="right">
+			<font color="#FFFFFF"><b>-30.00</b></font></td>
+			<td bgColor="#0000ff" width="11%" align="right"><b>
+			<font color="#ffffff">0.00</font></b></td>
+		</tr>
+		<tr>
+			<td bgColor="#0000ff" width="3%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">180</font></b></td>
+			<td bgColor="#0000ff" width="13%"><b>
+			<font color="#ffffff" size="2" face="Arial">KUKUŘICE</font></b></td>
+			<td bgColor="#0000ff" width="6%" align="middle"><b>
+			<font color="#ffffff">0</font></b></td>
+			<td bgColor="#0000ff" width="4%" align="right"><b>
+			<font color="#ffffff">06</font></b></td>
+			<td bgColor="#0000ff" width="25%" align="left"><b>
+			<font color="#ffffff">Vlastní produkce </font></b></td>
+			<td bgColor="#0000ff" width="10%" align="right"><b>
+			<font color="#ffffff">4500.00</font></b></td>
+			<td bgColor="#0000ff" width="11%" align="right"><b>
+			<font color="#ffffff">1350000.00</font></b></td>
+		</tr>
+		<tr>
+			<td bgColor="#0000ff" width="3%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">180</font></b></td>
+			<td bgColor="#0000ff" width="13%"><b>
+			<font color="#ffffff" size="2" face="Arial">KUKUŘICE</font></b></td>
+			<td bgColor="#0000ff" width="6%" align="middle"><b>
+			<font color="#ffffff">0</font></b></td>
+			<td bgColor="#0000ff" width="4%" align="right"><b>
+			<font color="#ffffff">06</font></b></td>
+			<td bgColor="#0000ff" width="25%" align="left"><b>
+			<font color="#ffffff">Vlastní produkce </font></b></td>
+			<td bgColor="#0000ff" width="10%" align="right"><b>
+			<font color="#ffffff">-1350.00</font></b></td>
+			<td bgColor="#0000ff" width="11%" align="right">
+			<font color="#FFFFFF"><b>-405000.00</b></font></td>
+		</tr>
+		<tr>
+			<td bgColor="#0000ff" width="3%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">180</font></b></td>
+			<td bgColor="#0000ff" width="13%"><b>
+			<font color="#ffffff" size="2" face="Arial">KUKUŘICE</font></b></td>
+			<td bgColor="#0000ff" width="6%" align="middle"><b>
+			<font color="#ffffff">0</font></b></td>
+			<td bgColor="#0000ff" width="4%" align="right"><b>
+			<font color="#ffffff">10</font></b></td>
+			<td bgColor="#0000ff" width="25%" align="left"><b>
+			<font color="#ffffff">Spotřeba-krmivo </font></b></td>
+			<td bgColor="#0000ff" width="10%" align="right"><b>
+			<font color="#ffffff">3150.00</font></b></td>
+			<td bgColor="#0000ff" width="11%" align="right"><b>
+			<font color="#ffffff">950000.00</font></b></td>
+		</tr>
+		<tr>
+			<td bgColor="#0000ff" width="3%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">180</font></b></td>
+			<td bgColor="#0000ff" width="13%"><b>
+			<font color="#ffffff" size="2" face="Arial">KUKUŘICE</font></b></td>
+			<td bgColor="#ff0000" width="6%" align="middle"><b>
+			<font color="#ffffff">1</font></b></td>
+			<td bgColor="#0000ff" width="4%" align="right"><b>
+			<font color="#ffffff">01</font></b></td>
+			<td bgColor="#0000ff" width="25%" align="left"><b>
+			<font color="#ffffff">Kód způsobu pěstování</font></b></td>
+			<td bgColor="#FF0000" width="10%" align="right"><b>
+			<font color="#ffffff">10.00</font></b></td>
+			<td bgColor="#0000ff" width="11%" align="right"><b>
+			<font color="#ffffff">0.00</font></b></td>
+		</tr>
+		<tr>
+			<td bgColor="#0000ff" width="3%"><b>
+			<font color="#ffffff" size="2" face="Arial">180</font></b></td>
+			<td bgColor="#0000ff" width="13%"><b>
+			<font color="#ffffff" size="2" face="Arial">KUKUŘICE</font></b></td>
+			<td bgColor="#ff0000" width="6%" align="middle"><b>
+			<font color="#ffffff">1</font></b></td>
+			<td bgColor="#0000ff" width="4%" align="right"><b>
+			<font color="#ffffff">02</font></b></td>
+			<td bgColor="#0000ff" width="25%" align="left"><b>
+			<font color="#ffffff">Kompletnost dat </font></b></td>
+			<td bgColor="#0000ff" width="10%" align="right"><b>
+			<font color="#ffffff">0.00</font></b></td>
+			<td bgColor="#0000ff" width="11%" align="right"><b>
+			<font color="#ffffff">0.00</font></b></td>
+		</tr>
+		<tr>
+			<td bgColor="#0000ff" width="3%"><b>
+			<font color="#ffffff" size="2" face="Arial">180</font></b></td>
+			<td bgColor="#0000ff" width="13%"><b>
+			<font color="#ffffff" size="2" face="Arial">KUKUŘICE</font></b></td>
+			<td bgColor="#ff0000" width="6%" align="middle"><b>
+			<font color="#ffffff">1</font></b></td>
+			<td bgColor="#0000ff" width="4%" align="right"><b>
+			<font color="#ffffff">03</font></b></td>
+			<td bgColor="#0000ff" width="25%" align="left"><b>
+			<font color="#ffffff">Sklizňová plocha (Ha 2 d.m.) </font></b></td>
+			<td bgColor="#0000ff" width="10%" align="right"><b>
+			<font color="#ffffff">30.00</font></b></td>
+			<td bgColor="#0000ff" width="11%" align="right"><b>
+			<font color="#ffffff">0.00</font></b></td>
+		</tr>
+		<tr>
+			<td bgColor="#0000ff" width="3%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">180</font></b></td>
+			<td bgColor="#0000ff" width="13%"><b>
+			<font color="#ffffff" size="2" face="Arial">KUKUŘICE</font></b></td>
+			<td bgColor="#ff0000" width="6%" align="middle"><b>
+			<font color="#ffffff">1</font></b></td>
+			<td bgColor="#0000ff" width="4%" align="right"><b>
+			<font color="#ffffff">06</font></b></td>
+			<td bgColor="#0000ff" width="25%" align="left"><b>
+			<font color="#ffffff">Vlastní produkce </font></b></td>
+			<td bgColor="#0000ff" width="10%" align="right"><b>
+			<font color="#ffffff">1350.00</font></b></td>
+			<td bgColor="#0000ff" width="11%" align="right">
+			<font color="#FFFFFF"><b>405000.00</b></font></td>
+		</tr>
+		<tr>
+			<td bgColor="#0000ff" width="3%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">180</font></b></td>
+			<td bgColor="#0000ff" width="13%"><b>
+			<font color="#ffffff" size="2" face="Arial">KUKUŘICE</font></b></td>
+			<td bgColor="#ff0000" width="6%" align="middle"><b>
+			<font color="#ffffff">1</font></b></td>
+			<td bgColor="#0000ff" width="4%" align="right"><b>
+			<font color="#ffffff">16</font></b></td>
+			<td bgColor="#0000ff" width="25%" align="left"><b>
+			<font color="#ffffff">Prodej</font></b></td>
+			<td bgColor="#0000ff" width="10%" align="right">
+			<font color="#FFFFFF"><b>1350.00</b></font></td>
+			<td bgColor="#0000ff" width="11%" align="right">
+			<font color="#FFFFFF"><b>405000.00</b></font></td>
+		</tr>
+		<tr>
+			<td bgColor="#0000ff" width="3%"><b>
+			<font face="Arial" size="2" color="#FFFFFF">180</font></b></td>
+			<td bgColor="#0000ff" width="13%"><b>
+			<font color="#ffffff" size="2" face="Arial">KUKUŘICE</font></b></td>
+			<td bgColor="#ff0000" width="6%" align="middle"><b>
+			<font color="#ffffff">1</font></b></td>
+			<td bgColor="#0000ff" width="4%" align="right"><b>
+			<font color="#ffffff">28</font></b></td>
+			<td bgColor="#0000ff" width="25%" align="left"><b>
+			<font color="#ffffff">Tržby-hl.výrobek</font></b></td>
+			<td bgColor="#0000ff" width="10%" align="right"><b>
+			<font color="#ffffff">0.00</font></b></td>
+			<td bgColor="#0000ff" width="11%" align="right"><b>
+			<font color="#ffffff">&nbsp;810000.00</font></b></td>
+		</tr>
+	</table>
+	<p><font face="Arial">Pokud je situace komplikovanější tím, že část produkce je 
+prodána za účelem výroby krmiva a část za účelem výroby suroviny pro energetické 
+účely, bude vykazován prodej a tržby i ve sloupci 0. Rozpočítání produkce mezi 
+sloupce 0 a 1 se pak samozřejmě bude prováděn poměrem prodaného množství pro 
+energetické účely k celkové produkci. </font></p>
+	<p><font face="Arial">V praxi se spíše setkáte s tím, že podniky prodávají již 
+vyrobenou siláž a&nbsp; senáž provozovatelům bioplynových stanic. U takovýchto 
+podniků máte prodej siláže uveden v tabulce H2.Výrobky ŽV a ost. produkce pod 
+výkonem 865. Tuto produkci a prodej siláže je nutno uvádět v tabulce 
+H1.Rostlinná výroba u výkonu, ze kterého pomocná výroba vznikla. V tomto případě 
+u výkonu 180. Doposud jste množství zelené hmoty předané na silážování za účelem 
+prodeje vykazovali pod položkou 18-Předání do zpracování. Množství kukuřice 
+předané pro výkon 865 jste zřejmě stanovovali odhadem např. v poměru 1:2, to 
+znamená že na 1 tunu siláže byly spotřebovány 2 tuny kukuřice. <br>Úpravu dat v takovémto případě provedete obdobně jako v úvodním příkladu pouze s 
+tím rozdílem, že pro sloupec 1 změníte položku 18-Předání do zpracování na 
+položku 16-Prodej. Tržbu z tabulky H2. je nutno přesunout do tabulky H1. k 
+výkonu 180 do sloupce 1. Protože tržby z výkonu 865 jsou v tabulce 
+D4.Podrobnější členění účtů vykazovány na řádku &lt;Tržby za prodej vlastních 
+výrobků z pomocné výroby&gt; a přesunutím do bilancí RV budou považovány za tržby z 
+rostlinné výroby, je nutné&nbsp; upravit tabulku D4.&nbsp; </font></p>
+	<p><font face="Arial">Prodejem pro energetické účely může být např. prodej sena 
+a slámy do spaloven.&nbsp; Prodej sena bude vykázán u výkonu 290-louky obdobným 
+způsobem jako u siláže a senáže.<br>Prodej takovéto slámy zůstane v tabulce H2. na výkonu 420.</font></p>
+	<p><font face="Arial">Dále se můžete setkat s prodejem chlévské mrvy, podestýlky 
+od drůbeže, kejdy provozovatelům bioplynových stanic. Tento prodej zůstane beze 
+změn vykázán v tabulce H2. na výkonu 571.<br>
+&nbsp;</font></p></li>
+	<li><font face="Arial"><b>H2. Výrobky ŽV, vedlejší výrobky RV, výrobky 
+	pomocné, potravinářské, lesní a ostatní přidružené výroby</b><br><br>
+	<font color="#FF0000"><b>Změna</b></font><br>
+	Od roku 2013 je zrušen výkon 865 - siláž na prodej&nbsp; a 866 - senáž a 
+	seno na prodej v tabulce H2. Výrobky pomocné výroby. Prodané množství a 
+	tržba se bude vykazovat v tabulce H1. Výrobky RV u té plodiny, ze které byla 
+	vyrobena. Tedy např. u kukuřice, jednoletých pícnin, jetele, trávy. <br>
+	V číselníku výrobků jsou tyto dva výkony ponechány a import je nadále bude 
+	naplňovat. Po importu zásob je nutno zkontrolovat, jaké obraty na výrobcích 
+	865 a 866 vznikly. Pokud je uvedena pouze spotřeba, stejně jako v minulých 
+	letech pouze všechny obraty těchto výkonů smažete. Pokud zjistíte, že došlo 
+	i k prodeji, je nutno tržbu dopořídit do tabulky H1. k plodině, ze které 
+	bylo vyrobeno. U této plodiny snížit&nbsp; řádek 10 - spotřeba krmiv o 
+	adekvátní množství a doplnit nový řádek 16 - prodej. Po té všechny obraty 
+	výkonu 865 a 866 z tabulky H2. smažte.<br>
+	<br>
+	Pro výrobek <b>870-krmné směsi</b> <b>k prodeji </b>se bude uváděn pouze stav zásoby určené k prodeji. 
+	Pokud dojde u tohoto výrobku k prodeji, 
+	bude se uvádět pouze produkce tohoto prodaného množství a jeho prodej. 
+	Počáteční, konečný stav a jiné úbytky se uvádět nebudou.<br>
+	Tabulka upravena stejným způsobem jako G1.Zvířata a H1.Rostlinná výroba 
+	rozšířením o číslo sloupce z důvodu možnosti rozdělení na ekologický výrobek 
+	a konvenční výrobek.<br>
+&nbsp;</font></li>
+	<li><font face="Arial"><b>J. Dotace<br></b>Pole, která se nemají vyplňovat 
+	program nuluje a přeskakuje.<b><br></b>Po zadání naturální hodnoty (ha, VDJ atd.) můžete využít doplnění 
+	přiznané částky v tis. Kč vložením prázdného údaje (mezerník) do sloupce 
+	Přiznáno. Program doplní částku vynásobením stanovené sazby x počet zadaných 
+	jednotek. Může ušetřit práci a poslouží i jako kontrola.&nbsp;Vložením 
+	prázdného údaje do sloupce Zaplaceno se doplní částka ze sloupce Přiznáno.<b><br>
+	</b>Kontrola vazeb č. 60 provede kontrolu na sazby pro jednotlivé dotační 
+	tituly, u kterých se vyplňuje měrná jednotka. <br><br>&nbsp;</font></li>
+</ul>
+<p><font face="Arial">&nbsp;<b>IMPORT DAT</b></font></p>
+<ul>
+  <li><font face="Arial">Ke zpracování jsou potřeba níže uvedené soubory.
+    </font>
+	<ul>
+		<li><font face="Arial"><b>MROCNIB.DBF</b>   - mzdy 12/2013</font></li>
+		<li><font face="Arial"><b>ZAKLADNI.DBF</b>   - mzdy 12/2013</font></li>
+		<li><font face="Arial"><b>MSZA.TNC</b>   - zásoby 12/2013</font></li>
+		<li><font face="Arial"><b>SP_VUZEC.LO1</b>  - zásoby 01/2014</font>
+		<font face="Arial">nebo</font></li>
+		<li><font face="Arial"><b>SK_POH.DBF</b>    - zásoby Finance 12/2013</font></li>
+		<li><font face="Arial"><b>SK_POR.DBF</b>    - zásoby Finance 12/2013</font></li>
+		<li><font face="Arial"><b>MAT.DBF</b>    - zásoby Finance 12/2013</font></li>
+		<li><font face="Arial"><b>EMA00020.DBF</b>  - majetek 12/2013</font></li>
+		<li><font face="Arial"><b>Z0EVIDNC.DBF</b>  - zvířata základní stádo 
+		12/2013</font></li>
+		<li><font face="Arial"><b>Z0KMENNC.DBF </b>-<b> </b>zvířata obraty 
+		12/2013</font></li>
+		<li><font face="Arial"><b>UA000010.TNC</b>  - MS z  účetnictví</font>
+		<font face="Arial">nebo</font></li>
+		<li><font face="Arial"><b>KNIH1213.DBF</b>  - MS z  financí<br></font>
+		</li>
+	</ul></li>
+	<li><font face="Arial">Tvorba výše uvedených souborů</font><ul>
+		<li><font face="Arial">MROCNIB.DBF a ZAKLADNI.DBF - mzdy 12/2013, <b><i>&lt;Správa
+        dat - Exporty</i></b></font> <b></b><font face="Arial"><b><i>databází&gt;</i>,</b> označit
+        ZAKLADNI.DTA a MROCNIB.DTA, vybrat formát dBaseIII.</font></li>
+		<li><font face="Arial">MSZA.TMC - zásoby 12/2013 <i><b>&lt;Výstupy - Export
+        stavů - TEXT&gt;</b></i>, omezte</font> <font face="Arial">materiálovou
+        skupinu od 21 do 28. Vytvořený soubor se nachází v adresáři</font>
+		<font face="Arial">ZA.</font></li>
+		<li><font face="Arial">SP_VUZE.LO1 - zásoby 01/2014, <i><b>&lt;Výstupy - pohyby
+        - sumární - VÚZE- kompletní&gt;</b></i>, omezte materiálovou skupinu od 21
+        do 28, vytvořená sestava</font> <font face="Arial">se nachází v
+        adresáři ZA\LST. Tvorba sestavy předpokládá přítomnost</font>
+		<font face="Arial">datového
+        a indexového souboru SDA*.?O1 v adresáři DAT a vypnutí</font>
+		<font face="Arial">přepínače
+        &lt;Rozborové sestavy - jen součty&gt;.</font></li>
+		<li><font face="Arial">EMA00020.DBF - majetek 12/2013, <b><i>&lt;Výstupy - export
+        dat - aktuální stav- DBF formát - zpracovat i vyřazený majetek&gt;</i>.</b></font></li>
+		<li><font face="Arial">Z0KMENNC.DBF - zvířata 12/2013. Soubor získáte
+        spuštěním zvířat s parametrem</font> <font face="Arial">/E. V nabídce
+        <i><b>&lt;Výstupy - export dat - DBF - pohyby&gt;</b></i> </font></li>
+		<li><font face="Arial">Z0EVIDNC.DBF - zvířata 12/2013. Soubor získáte
+        spuštěním zvířat s parametrem</font> <font face="Arial">/E. V nabídce
+        <i><b>&lt;Výstupy - export dat - DBF - evidence&gt;</b></i></font></li>
+		<li><font face="Arial">UA000010.TNC je textový soubor, který vznikne převodem
+        MS účetnictví</font> <font face="Arial">spuštěním programu
+        UX01MAIN.EXE. Tento program může být problematické spustit na novějších
+        počítačích. Pokud již nemáte k dispozici pomalejší&nbsp; stroj
+        staršího data výroby, musíte matriční soubor UA000010.MNC naimportovat do Financí a odtud exportovat soubor KNIH1213.DBF. Import
+        do Financí lze provést pouze verzí FIN_PM.EXE.<br>Od roku 2007 program již není zahrnut do distribuce. Můžete si jej
+        stáhnout zde - <font color="#ff0000"><a href="ux01main.zip">UX01MAIN.ZIP</a>.</font></font>&nbsp;</li>
+		<li><font face="Arial">KNIH1213.DBF - MS hlavní knihy a výsledovek z
+        programu FINANCE se</font> <font face="Arial">vytvoří spuštěním nabídky
+        <b><i>&lt;Nastavení - konfigurace - programové vybavení</i></b></font>
+		<b><i><font face="Arial">-
+        účetnictví - hlavní kniha - pořizování a oprava - F10 - export do</font>
+		</i><font face="Arial"><i>formátu DBF&gt;</i>.</font></b></li>
+	</ul></li>
+</ul>
+<ol>
+  <li><font face="Arial"><b>Mzdy<br>
+    </b>V adresáři zvoleného respondenta jsou vyhledány soubory MROCNIB.DBF</font>
+    <font face="Arial">a ZAKLADNI.DBF, ze kterých je naplňován soubor pracovní
+    síly. Jsou</font> <font face="Arial">počítány odpracované hodiny a navíc
+    pro manažera podniku je vyplňován</font> <font face="Arial">rok narození.
+    Rozčlenění na pravidelnou a nepravidelnou práci je</font> <font face="Arial">provedeno
+    automaticky v průběhu importu. Protože z matričního souboru</font> <font face="Arial">nelze
+    zjistit manažery podniku, je v úvodu importu nabídnut seznam</font> <font face="Arial">pracovníků
+    a v něm je nutno označit manažera (případně i několik osob).</font> <font face="Arial">Manažerem
+    se podle mého názoru rozumí ředitel, případně předseda,</font> <font face="Arial">statutární
+    zástupce).&nbsp;</font></li>
+  <li><font face="Arial"><b>Zvířata<br>
+    </b>Tímto importem je naplněn soubor <b><i>G1. Zvířata</i></b> a <b><i>&lt;5&gt; Obrat stáda</i></b>.
+    <br>
+	Protože v tabulce G1. Zvířata je počáteční a konečný stav u výkonů
+    základního stáda evidován v pořizovacích cenách, jsou tyto hodnoty přebírány
+    ze souboru Z0EVID??.DBF.<br>
+	Po načtení obratové soupisky zvířat se zobrazí protokol vyskytujících se 
+	kategorií zvířat s označením, do kterého výkonu ŽV budou naplněny. Pokud 
+	přiřazení výkonu ŽV ke kategorii není vyhovující, je potřeba naplnit 
+	podnikový číselník <b><i>Výkony</i></b><i> </i>případně<b><i> Kategorie 
+	zvířat </i></b>a změnit přiřazení Výkonu ZEIS pro Výkon ŽV. </font></li>
+  <li><font face="Arial"><b>Dlouhodobý majetek</b><br>
+    V adresáři respondenta je vyhledán soubor EMA00020.DBF. </font> &nbsp;<font face="Arial">Se 
+	souborem
+    Z0EVID??.DBF již není při importu pracováno, protože dospělá zvířata se do 
+	tabulky E1.Dlouhodobý majetek nezahrnují. Ze souboru EMA00020.DBF je naplňována tabulka <b> <i>E1. Dlouhodobý majetek</i></b></font><b>.
+	</b><font face="Arial"><br>
+    V úvodu importu je zobrazen matriční soubor EMA00020.DBF pro kontrolu,
+    zda jsou správně zatříděny prostředky zlepšování půdy (tj. zejména
+    meliorace).&nbsp; Pokud je má podnik mezi ostatními stavbami, je nutno změnit
+    SKP např. na 46.99.65 tak, aby byly napočteny do řádku 040 v tabulce&nbsp;
+    E1.<br>
+ Údaje naplněné</font>
+    <font face="Arial">do souboru majetek je v každém případě nutno upravit
+    v položkách</font> <font face="Arial">&quot;<i>Počáteční stav</i>&quot; a
+    &quot;<i>Konečný stav</i>&quot;, protože jsou kontrolovány na rozvahu.</font> <font face="Arial">Protože
+    řada podniků nemá v programu majetek vedeny všechny pozemky,</font> <font face="Arial">drobný
+    dlouhodobý majetek z účtu 022080, musí se o tyto hodnoty</font> <font face="Arial">příslušné
+    položky navýšit.<br>
+    Řádek jiný dlouhodobý hmotný a nehmotný majetek je naplňován z hlavní knihy. 
+	Je naplňován účty 011..019, 071..079 a&nbsp; 091x. Do sloupce pořízení je 
+	převzat obrat MD 011..019, do sloupce odpisy obrat Dal 071..079. Pokud došlo 
+	během roku k zařazení nebo vyřazení tohoto majetku, je potřeba náplň řádku 
+	individuálně zkontrolovat&nbsp; a případně upravit.<br>
+	Do tabulky již nejsou načítány účty zálohy na majetek
+    (051,052)&nbsp; a nezařazený majetek (041, 042). </font></li>
+  <li><font face="Arial"><b>Účetnictví<br>
+    </b>Před zpracováním lze nastavit, které soubory budou při importu</font>
+    <font face="Arial">naplňovány. Důležité je nastavení měrné jednotky
+    produkce pro naplnění</font> <font face="Arial">souboru &lt;1&gt;Náklady na
+    výkony RV. Tento soubor musí být veden v tunách.</font> <font face="Arial">Pokud
+    podnik eviduje výrobky RV v metrácích, je nutné nastavit přepínač</font>
+    <font face="Arial">na <b>[q]</b>. Pak se při naplňování naturálních ukazatelů
+    dělí hodnoty deseti.</font> <font face="Arial">V průběhu importu vznikají
+    chybové protokoly o nezpracovaných účtech,</font>  <font face="Arial">které
+    lze prohlížet a tisknout v nabídce <b><i> &lt;Výstupy -prohlížení&gt;</i></b>.
+    </font>
+  </li>
+  <li><font face="Arial"><b>Zásoby<br>
+    </b>V adresáři zvoleného respondenta jsou vyhledány soubory MSZA.TXT</font>
+    <font face="Arial">a SP_VUZEC.L??.<br>
+    Od roku 2001 jsou do šetření zahrnuty všechny vlastní výrobky, to</font>
+    <font face="Arial">znamená i vedlejší výrobky, výrobky pomocné výroby,
+    nezemědělské výroby,</font> <font face="Arial">polotovary atd. Prostě všechno
+    co je v účetnictví v účtové skupině 12</font> <font face="Arial">a
+    jejich změna se účtuje na 611, 612, 613. Proto je nutné při exportu</font>
+    <font face="Arial">dat z programu zásoby nastavit rozsah pro skladovou položku
+    od</font> <font face="Arial">2100000000 do 28999999999.<br>
+    Při importu jsou vybrány skladové položky vlastních výrobků a jsou</font>
+    <font face="Arial">nabídnuty k editaci. Ke každé skladové položce se
+    musí doplnit buď výkon</font> <font face="Arial">nebo číslo výrobku,
+    ke kterému skladová položka patří.</font> <font face="Arial"><br>
+	Údaj
+    &quot;<b>Výkon</b>&quot; vyplňte pro hlavní výrobky RV (zrno z obilovin, zelená</font>
+    <font face="Arial">hmota jetele, vojtěšky, kukuřice, louky atd.) Pohyby na
+    těchto produktech</font> <font face="Arial">se naplňují do souboru
+    bilance RV.</font> <font face="Arial"><br>
+	Údaj &quot;<b>Výrobek</b>&quot; vyplňte
+    pro vedlejší výrobky RV (sláma, skrojky z řepy),</font> <font face="Arial">ŽV
+    (hnůj, kejda, močůvka) a pro výrobky pomocné výroby a nezemědělské</font>
+    <font face="Arial">výroby (siláž, senáž, seno, vlastní krmné směsi,
+    průmyslové výrobky</font> <font face="Arial">atd.) Pohyby na těchto 
+	produktech</font> <font face="Arial">se naplňují do tabulky H2. Výrobky ŽV a 
+	ostatní produkce.</font> </li>
+</ol>
+<blockquote>
+	<p><font face="Arial">Protože výrazně narostl počet zpracovávaných skladových
+položek (řádově</font> <font face="Arial">až na stovky), program TES se v
+úvodu importu pokouší ke skladovým</font> <font face="Arial">položkám předvyplnit
+číslo výkonu tak, že vyhledává doklad s produkcí</font> <font face="Arial">a
+z ní výkon převezme. Do čísla výrobku pak předvyplní kód, který je</font>
+	<font face="Arial">v číselníku výkonů příslušnému výkonu přiřazen.
+Protože např. k výkonu</font> <font face="Arial">700 je přiřazen výrobek
+510 (kravské mléko), doplní se tento kód</font> <font face="Arial">i k položce
+hnůj, u níž byla účtována produkce k výkonu 700. Tyto zjevné</font>
+	<font face="Arial">nesrovnalosti
+samozřejmě opravte. Myslím, že malá pomoc je lepší než</font> <font face="Arial">žádná.</font></p>
+	<p><font face="Arial" color="#FF0000"><b>Nezapomeňte pro hlavní výrobky RV vynulovat kód výrobku
+!!!!!</b></font></p>
+	<p><font face="Arial">Vyplnění koeficientu pro přepočet měrné jednotky je
+řešeno stejně</font> <font face="Arial">jako v minulých letech. Pokud je
+koeficient různý od nuly, dělí se jím</font> <font face="Arial">množství.
+Jestliže je cena uvedena za tunu, ponechte v koeficientu nulu.</font>
+	<font face="Arial">Jestliže
+je za metrák, dejte koeficient 10 (koeficientem se dělí</font>
+	<font face="Arial">množství).U těchto výrobků musí být uvedeny následující měrné
+jednotky</font> </p>
+	<ul>
+		<li><font face="Arial">mléko - 1000 litrů - koeficient je 1000</font></li>
+		<li><font face="Arial">vejce - 1000 ks - koeficient 1000</font></li>
+		<li><font face="Arial">vlna - kg - koeficient 0</font></li>
+	</ul>
+	<p><font face="Arial">Klávesou &lt;Ctrl F7&gt; lze zobrazit sumarizované pohyby 
+	pro aktuální skladovou položku.<br>
+	Klávesou &lt;F5&gt; lze zapnout podmnožinu, která hromadně označí skladové položky 
+	u nichž není stav ani pohyb (součet množství a součet Kč je nula). Tyto 
+	skladové položky lze hromadně smazat klávesou &lt;Ctrl Y&gt;. </font></p>
+	<p>&nbsp;</p>
+</blockquote>
+
+</body>
+
+</html>

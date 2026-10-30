@@ -1,0 +1,98 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="cs">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>TES - Popis verzí</title>
+<base target="_self">
+</head>
+
+<body bgcolor="#FFFFB3">
+
+<h2><b><font face="Arial" size="4">Popis verzí pro rok</font><font face="Arial" size="3">&nbsp;
+<a href="verze.htm">2025</a></font><font face="Arial" size="4"> </font>
+<font face="Arial" size="3"><a href="verze2024.htm">2024</a>&nbsp; 
+<a href="verze2023.htm">2023</a>&nbsp;&nbsp;
+<a href="verze2022.htm">2022</a>&nbsp;
+<a href="verze2021.htm">2021</a>&nbsp; <a href="verze2020.htm">2020</a></font><font face="Arial" size="4">&nbsp; </font>
+<font face="Arial" size="3"> <a href="verze2019.htm">2019</a></font><font face="Arial" size="4">&nbsp; </font>
+<font face="Arial" size="3"> <a href="verze2018.htm">2018</a></font><font face="Arial" size="4">&nbsp; </font>
+<font face="Arial" size="3"> <a href="verze2017.htm">2017</a>&nbsp;
+<a href="verze2016.htm">2016</a>&nbsp;
+<a href="verze2015.htm">2015</a>&nbsp;
+<a href="verze2014.htm">2014</a>&nbsp;
+<a href="verze2013.htm">2013</a>&nbsp;
+<a href="verze2012.htm">2012</a>&nbsp;
+<a href="verze2011.htm">2011</a>&nbsp;
+<a href="verze2010.htm">2010</a>&nbsp;
+<a href="verze2009.htm">2009</a>&nbsp;
+<a href="verze2008.htm">2008</a>&nbsp;
+<a href="verze2007.htm">2007</a>&nbsp;
+<a href="verze2006.htm">2006</a>&nbsp; <a href="verze2005.htm">2005</a>&nbsp;
+<a href="verze2004.htm">2004</a>&nbsp; <a href="verze2003.htm">2003</a>&nbsp; 
+2002</font></b></h2>
+
+<hr>
+
+<h3><b><font face="Arial">Změny ve verzi 4.02</font></b></h3>
+<ul>
+  <li><font face="Arial">Upravena práce&nbsp; s tabulkou&nbsp; &lt;Dlouhodobý
+    majetek&gt;.&nbsp; Doposud&nbsp; se&nbsp; při exportu do XML doplňoval řádek
+    č. 001 - dlouhodobý majetek celkem jako součet pořízených řádků.
+    Součtování je vypuštěno a řádek 001 se&nbsp; bude doplňovat&nbsp; ručně.
+    Upozorňuji,&nbsp; že řádek&nbsp; 001 se&nbsp; nemusí rovnat&nbsp; součtu
+    řádků 002 až 008, protože dlouhodobý majetek celkem uvedený v
+    aktivech může obsahovat&nbsp; poskytnuté zálohy&nbsp; na&nbsp; nákup,&nbsp;
+    nedokončený&nbsp; majetek&nbsp; a opravnou položku k nabytému majetku.<br>
+    </font></li>
+  <li><font face="Arial">Lze používat duplicitní klíč v souboru &lt;Obrat
+    stáda&gt;.<br>
+    </font></li>
+  <li><font face="Arial">Opravena&nbsp; definice číselníku&nbsp; &lt;Položky
+    produkcí výrobků&gt;. U&nbsp; položky</font> <font face="Arial">14-Spotřeba
+    ostatní&nbsp; byl definován&nbsp; kód pro&nbsp; XML soubor stejný jako&nbsp;
+    u položky č. 22-Ostatní úbytky.</font></li>
+</ul>
+<ul>
+  <li><font face="Arial">Doplněna definice kontrol nad bilancemi a soubory nákladů
+    a&nbsp; výnosů.</font>&nbsp;<font face="Arial"><br>
+    Kontroly jsou dostupné v&nbsp; nabídce &lt;Výstupy&nbsp; - kontroly&gt;,
+    nebo přímo&nbsp; v</font> <font face="Arial">nabídkách&nbsp; &lt;Vstupy
+    -&nbsp; pořízení - &nbsp;bilance&nbsp; RV,&nbsp; bilance&nbsp; ŽV,&nbsp;
+    produkce ostatních výrobků, náklady na&nbsp; RV, náklady&nbsp; na ŽV,
+    náklady na&nbsp; ostatní výkony&gt; stisknutím klávesy F10.</font><font face="Arial">&nbsp;<br>
+    </font><font face="Arial">Do&nbsp; proměnných A&nbsp; a B&nbsp; lze napočítat&nbsp;
+    ze souborů&nbsp; bilancí a&nbsp; nákladů hodnoty,&nbsp; které jsou&nbsp;
+    popsány v definici kontroly. S proměnnými A a&nbsp; B lze provést&nbsp;
+    matematický výpočet&nbsp; a výsledek&nbsp; se uloží do proměnné&nbsp;
+    C. Pro každý výkon lze definovat rozsah povolených hodnot. Pokud výsledek
+    kontroly nevyhovuje zadaným rozsahům, je výsledek označen znakem&nbsp;
+    &quot;!&quot;. Dále lze definovat logickou podmínku mezi hodnotami A a B,
+    která je&nbsp; v závěru vyhodnocena.&nbsp; Pokud není&nbsp; splněna, je&nbsp;
+    výsledek taktéž&nbsp; označen jako chyba znakem &quot;!&quot;.&nbsp; Po
+    spuštění&nbsp; kontroly je&nbsp; zobrazen&nbsp; soubor,&nbsp; který&nbsp;
+    obsahuje&nbsp; výkon, hodnoty A, B, C, rozsah od do a identifikaci chyby.
+    Pokud je v údaji pro identifikaci chyby zobrazen znak &quot;-&quot;, znamená
+    to, že pro daný výkon&nbsp; v této kontrole není definován rozsah
+    povolených hodnot.&nbsp;&nbsp; Kontrolu lze zpracovat i pro všechny
+    zpracovávané podniky&nbsp; najednou. Kontrola&nbsp; se v tomto případě
+    nespouští klávesou &lt;Enter&gt;, ale&nbsp; klávesou &lt;F10&gt;.<o:p>
+    </o:p>
+    <br>
+    Po&nbsp; zobrazení výsledku kontrol lze využít práci s podmnožinou&nbsp;
+    &lt;F5&gt;, ve&nbsp; které je předdefinováno zobrazení chybných záznamů.
+    Kurzor se&nbsp; pak pohybuje&nbsp; pouze&nbsp; po&nbsp; chybných&nbsp; větách.&nbsp;
+    Podmnožina&nbsp; se &nbsp;vypíná&nbsp; taktéž klávesou &lt;F5&gt;.
+    Pokud potřebujete udělat kontrolní opis klávesou&nbsp; &lt;F6&gt;, při
+    zapnuté podmnožině se budou vypisovat pouze chybné záznamy.&nbsp;</font><span style="FONT-SIZE: 9pt; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: 'MS Mincho'"><o:p>
+    </o:p>
+    </span></li>
+</ul>
+
+<hr align="left">
+
+</body>
+
+</html>

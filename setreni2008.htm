@@ -1,0 +1,239 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="cs">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Popis zpracování 2007</title>
+<base target="_self">
+</head>
+
+<body bgcolor="#FFFFB3">
+
+<h2><font face="Arial" size="4"><b>Popis zpracování pro rok 
+</b></font>
+<font face="Arial" size="3"><b><a href="setreni2023.htm">2023</a>&nbsp; 
+<a href="setreni2022.htm">2022</a>&nbsp;
+<a href="setreni2021.htm">2021</a>&nbsp; 
+<a href="setreni2020.htm">2020</a></b></font><b><font face="Arial" size="3">&nbsp; <a href="setreni2019.htm">2019</a>&nbsp; 
+<a href="setreni2018.htm">2018</a>&nbsp; <a href="setreni2017.htm">2017</a>&nbsp; 
+<a href="setreni2016.htm">2016</a>&nbsp; </font></b>
+<font face="Arial" size="3"><b><a href="setreni2015.htm">2015</a>&nbsp; <a href="setreni2014.htm">2014</a>&nbsp;
+<a href="setreni2013.htm">2013</a>&nbsp;
+<a href="setreni2012.htm">2012</a>&nbsp;
+<a href="setreni2011.htm">2011</a>&nbsp; <a href="setreni2010.htm">2010</a>&nbsp;
+<a href="setreni2009.htm">2009</a>&nbsp; 2008</b></font></h2>
+<hr>
+
+<ul>
+  <li><font face="Arial">Z loňské verze</font> <font face="Arial">programu si překopírujte soubory <b> ZAKAZNIK.*</b>&nbsp;</font></li>
+	<li><font face="Arial">Pro jednotlivé podniky překopírujte podnikové 
+	číselníky (adresáře <b>12345678<span lang="en-us">\</span>CI</b>).</font></li>
+	<li><font face="Arial">Zkontrolujte nastavení cest k datům loňského roku v 
+	nabídce <b>&lt;Nastavení-cesty&gt;</b>.</font></li>
+	<li><font face="Arial">Nic jiného není potřeba kopírovat. Soubor D_IDEN.D00 
+	se založí sám. Pokud při zpracování období 12/2008 poprvé spustíte</font>
+    <font face="Arial">nabídku <b> &lt;<i>Pořízení - Identifikace podniku</i>&gt;</b>, program
+    se dotáže, zda chcete</font> <font face="Arial">převzít identifikační
+    údaje z loňského roku, abyste je nemuseli znovu</font> <font face="Arial">vyplňovat,
+    protože se zpravidla téměř nemění.</font></li>
+	<li><font face="Arial">Ke zpracování jsou potřeba níže uvedené soubory.
+    <br></font>
+	<ul>
+		<li><font face="Arial"><b>MROCNIB.DBF</b>   - mzdy 12/2008</font></li>
+		<li><font face="Arial"><b>ZAKLADNI.DBF</b>   - mzdy 12/2008</font></li>
+		<li><font face="Arial"><b>MSZA.TIC</b>   - zásoby 12/2008</font></li>
+		<li><font face="Arial"><b>SP_VUZEC.LJ1</b>  - zásoby 01/2009</font>
+		<font face="Arial">nebo</font></li>
+		<li><font face="Arial"><b>SK_POH.DBF</b>    - zásoby Finance 12/2008</font></li>
+		<li><font face="Arial"><b>SK_POR.DBF</b>    - zásoby Finance 12/2008</font></li>
+		<li><font face="Arial"><b>MAT.DBF</b>    - zásoby Finance 12/2008</font></li>
+		<li><font face="Arial"><b>EMA00020.DBF</b>  majetek 12/2008</font></li>
+		<li><font face="Arial"><b>Z0EVIDIC.DBF</b>  zvířata základní stádo
+        12/2008</font></li>
+		<li><font face="Arial"><b>Z0KMENIC.DBF </b>zvířata obraty 12/2008</font></li>
+		<li><font face="Arial"><b>UA000010.TIC</b>  účetnictví</font>
+		<font face="Arial">nebo</font></li>
+		<li><font face="Arial"><b>KNIH1208.DBF</b>  finance<br></font></li>
+	</ul></li>
+  <li><font face="Arial">Tvorba výše uvedených souborů<br>
+    </font>
+    <ul>
+      <li><font face="Arial">MROCNIB.DBF a ZAKLADNI.DBF - mzdy 12/2008, <b> <i> &lt;Správa
+        dat - Exporty</i></b></font> <b> </b> <font face="Arial"><b><i>databází&gt;</i>,</b> označit
+        ZAKLADNI.DTA a MROCNIB.DTA, vybrat formát dBaseIII.</font></li>
+      <li><font face="Arial">MSZA.TIC - zásoby 12/2008, <i> <b> &lt;Výstupy - Export
+        stavů - TEXT&gt;</b></i>, omezte</font> <font face="Arial">materiálovou
+        skupinu od 21 do 28. Vytvořený soubor se nachází v adresáři</font>
+        <font face="Arial">ZA.</font></li>
+      <li><font face="Arial">SP_VUZE.LJ1 - zásoby 01/2009, <i> <b> &lt;Výstupy - pohyby
+        - sumární - VUZE- kompletní&gt;</b></i>, omezte materiálovou skupinu od 21
+        do 28, vytvořená sestava</font> <font face="Arial">se nachází v
+        adresáři ZA\LST. Tvorba sestavy předpokládá přítomnost</font> <font face="Arial">datového
+        a indexového souboru SDA*.?J1 v adresáři DAT a vypnutí</font> <font face="Arial">přepínače
+        &lt;Rozborové sestavy - jen součty&gt;.</font></li>
+      <li><font face="Arial">EMA00020.DBF - majetek 12/2008, <b> <i> &lt;Výstupy - export
+        dat - aktuální stav- DBF formát - zpracovat i vyřazený majetek&gt;</i>.</b></font></li>
+      <li><font face="Arial">Z0KMENIC.DBF - zvířata 12/2008. Soubor získáte
+        spuštěním zvířat s parametrem</font> <font face="Arial">/E. V nabídce
+        <i>
+        <b>
+        &lt;Výstupy - export dat - DBF - pohyby&gt;</b></i> </font></li>
+      <li><font face="Arial">Z0EVIDIC.DBF - zvířata 12/2008. Soubor získáte
+        spuštěním zvířat s parametrem</font> <font face="Arial">/E. V nabídce
+        <i>
+        <b>
+        &lt;Výstupy - export dat - DBF - evidence&gt;</b></i></font></li>
+      <li><font face="Arial">UA000010.TIC je textový soubor, který vznikne převodem
+        MS účetnictví</font> <font face="Arial">spuštěním programu
+        UX01MAIN.EXE. Tento program může být problematické spustit na novějších
+        počítačích. Pokud již nemáte k dispozici pomalejší&nbsp; stroj
+        staršího data výroby, musíte matriční soubor UA000010.MIC naimportovat do Financí a odtud exportovat soubor KNIH1208.DBF. Import
+        do Financí lze provést pouze verzí FIN_PM.EXE.<br>
+        Od roku 2007 program již není zahrnut do distribuce. Můžete si jej
+        stáhnout zde - <font color="#ff0000"><a href="ux01main.zip">UX01MAIN.ZIP</a>.</font></font>&nbsp;</li>
+      <li><font face="Arial">KNIH1208.DBF - MS hlavní knihy a výsledovek z
+        programu FINANCE se</font> <font face="Arial">vytvoří spuštěním nabídky
+        <b>
+        <i>
+        &lt;Nastavení - konfigurace - programové vybavení</i></b></font> <b> <i> <font face="Arial">-
+        účetnictví - hlavní kniha - pořizování a oprava - F10 - export do</font>
+        </i>
+        <font face="Arial"><i>formátu DBF&gt;</i>.</font></b></li>
+    </ul>
+  </li>
+</ul>
+<p><font face="Arial">&nbsp;</font><font face="Arial"><b>IMPORT DAT</b></font></p>
+<ol>
+  <li><font face="Arial"><b>Pracovníci<br>
+    </b>V adresáři zvoleného respondenta jsou vyhledány soubory MROCNIB.DBF</font>
+    <font face="Arial">a ZAKLADNI.DBF, ze kterých je naplňován soubor pracovní
+    síly. Jsou</font> <font face="Arial">počítány odpracované hodiny a navíc
+    pro manažera podniku je vyplňován</font> <font face="Arial">rok narození.
+    Rozčlenění na pravidelnou a nepravidelnou práci je</font> <font face="Arial">provedeno
+    automaticky v průběhu importu. Protože z matričního souboru</font> <font face="Arial">nelze
+    zjistit manažery podniku, je v úvodu importu nabídnut seznam</font> <font face="Arial">pracovníků
+    a v něm je nutno označit manažera (případně i několik osob).</font> <font face="Arial">Manažerem
+    se podle mého názoru rozumí ředitel, případně předseda,</font> <font face="Arial">statutární
+    zástupce).&nbsp;</font></li>
+  <li><font face="Arial"><b>Zvířata<br>
+    </b>Tímto importem je naplněn soubor <b><i>G. Bilance ŽV</i></b> a <b><i>&lt;5&gt; Obrat stáda</i></b>.
+    Protože v tabulce G. Bilance ŽV je počáteční a konečný stav u výkonů
+    základního stáda evidován v pořizovacích cenách, jsou tyto hodnoty přebírány
+    ze souboru Z0EVID??.DBF.</font></li>
+  <li><font face="Arial"><b>Dlouhodobý hmotný majetek</b><br>
+    V adresáři respondenta jsou vyhledány soubory EMA00020.DBF</font> <font face="Arial">a
+    Z0EVID??.DBF. Z nich je naplňována tabulka <b> <i>E. Dlouhodobý majetek</i></b></font><b>
+	</b> 
+    <font face="Arial">a
+    tabulka<i> <b>E1.Podrobnější členění dlouhodobého majetku</b></i>.&nbsp;<br>
+    V úvodu importu je zobrazen matriční soubor EMA00020.DBF pro kontrolu,
+    zda jsou správně zatříděny prostředky zlepšování půdy (tj. zejména
+    meliorace).&nbsp; Pokud je má podnik mezi ostatními stavbami, je nutno změnit
+    SKP např. na 46.99.65 tak, aby byly napočteny do řádku 040 v tabulce&nbsp;
+    E a do řádku 002 v tabulce E1.<br>
+ Údaje naplněné</font>
+    <font face="Arial">do souboru majetek je v každém případě nutno upravit
+    v položkách</font> <font face="Arial">&quot;<i>Počáteční stav</i>&quot; a
+    &quot;<i>Konečný stav</i>&quot;, protože jsou kontrolovány na rozvahu.</font> <font face="Arial">Protože
+    řada podniků nemá v programu majetek vedeny všechny pozemky,</font> <font face="Arial">drobný
+    dlouhodobý majetek z účtu 022080, musí se o tyto hodnoty</font> <font face="Arial">příslušné
+    položky navýšit.<br>
+    Řádek dlouhodobý nehmotný majetek je naplňován z hlavní knihy, protože
+    obsahuje účty 011..019, zálohy na dlouhodobý nehmotný majetek
+    (051)&nbsp; a nezařazený nehmotný majetek (041). Proto je potřeba náplň
+    řádku individuálně zkontrolovat&nbsp; a případně upravit.</font></li>
+  <li><font face="Arial"><b>Účetnictví<br>
+    </b>Před zpracováním lze nastavit, které soubory budou při importu</font>
+    <font face="Arial">naplňovány. Důležité je nastavení měrné jednotky
+    produkce pro naplnění</font> <font face="Arial">souboru &lt;1&gt;Náklady na
+    výkony RV. Tento soubor musí být veden v tunách.</font> <font face="Arial">Pokud
+    podnik eviduje výrobky RV v metrácích, je nutné nastavit přepínač</font>
+    <font face="Arial">na <b>[q]</b>. Pak se při naplňování naturálních ukazatelů
+    dělí hodnoty deseti.</font> <font face="Arial">V průběhu importu vznikají
+    chybové protokoly o nezpracovaných účtech,</font>  <font face="Arial">které
+    lze prohlížet a tisknout v nabídce <b><i> &lt;Výstupy -prohlížení&gt;</i></b>.
+    Naplnit</font>  <font face="Arial">lze soubor Aktiva, Pasíva, Zisky a ztráty,Doplňkové
+    údaje výsledovky, Bilance RV, Bilance ŽV, Produkce ostatních výrobků,
+    Náklady na RV,</font> N<font face="Arial">áklady
+    na ŽV, Náklady na ostatní výkony, Výsledovka za podnik, Závazky,
+    Dlouhodobý majetek.</font> <br>
+  </li>
+  <li><font face="Arial"><b>Zásoby<br>
+    </b>V adresáři zvoleného respondenta jsou vyhledány soubory MSZA.TXT</font>
+    <font face="Arial">a SP_VUZEC.L??.<br>
+    Od roku 2001 jsou do šetření zahrnuty všechny vlastní výrobky, to</font>
+    <font face="Arial">znamená i vedlejší výrobky, výrobky pomocné výroby,
+    nezemědělské výroby,</font> <font face="Arial">polotovary atd. Prostě všechno
+    co je v účetnictví v účtové skupině 12</font> <font face="Arial">a
+    jejich změna se účtuje na 611, 612, 613. Proto je nutné při exportu</font>
+    <font face="Arial">dat z programu zásoby nastavit rozsah pro skladovou položku
+    od</font> <font face="Arial">2100000000 do 28999999999.<br>
+    Při importu jsou vybrány skladové položky vlastních výrobků a jsou</font>
+    <font face="Arial">nabídnuty k editaci. Ke každé skladové položce se
+    musí doplnit buď výkon</font> <font face="Arial">nebo číslo výrobku,
+    ke kterému skladová položka patří.</font> <font face="Arial">Údaj
+    &quot;Výkon&quot; vyplňte pro hlavní výrobky RV (zrno z obilovin, zelená</font>
+    <font face="Arial">hmota jetele, vojtěšky, kukuřice, louky atd.) Pohyby na
+    těchto produktech</font> <font face="Arial">se naplňují do souboru
+    bilance RV.</font> <font face="Arial">Údaj &quot;Výrobek&quot; vyplňte
+    pro vedlejší výrobky RV (sláma, skrojky z řepy),</font> <font face="Arial">ŽV
+    (hnůj, kejda, močůvka) a pro výrobky pomocné výroby a nezemědělské</font>
+    <font face="Arial">výroby (siláž, senáž, seno, vlastní krmné směsi,
+    průmyslové výrobky</font> <font face="Arial">atd.)<br>
+    <br>
+    Upozornění:</font></li>
+</ol>
+<blockquote>
+<p><font face="Arial">Při naplňování dat do bilancí program všechny
+skladové položky, které</font> <font face="Arial">mají vyplněn &quot;výrobek&quot;
+zařazují do souboru &quot;Produkce ostatních výrobků&quot;, ostatní</font> <font face="Arial">do
+souboru &quot;Bilance RV&quot;.</font></p>
+<p><font face="Arial">Protože výrazně narostl počet zpracovávaných skladových
+položek (řádově</font> <font face="Arial">až na stovky), program TES se v
+úvodu importu pokouší ke skladovým</font> <font face="Arial">položkám předvyplnit
+číslo výkonu tak, že vyhledává doklad s produkcí</font> <font face="Arial">a
+z ní výkon převezme. Do čísla výrobku pak předvyplní kód, který je</font>
+<font face="Arial">v číselníku výkonů příslušnému výkonu přiřazen.
+Protože např. k výkonu</font> <font face="Arial">700 je přiřazen výrobek
+510 (kravské mléko), doplní se tento kód</font> <font face="Arial">i k položce
+hnůj, u níž byla účtována produkce k výkonu 700. Tyto zjevné</font> <font face="Arial">nesrovnalosti
+samozřejmě opravte. Myslím, že malá pomoc je lepší než</font> <font face="Arial">žádná.</font></p>
+<p><font face="Arial" color="#FF0000"><b>Nezapomeňte pro hlavní výrobky RV vynulovat kód výrobku
+!!!!!</b></font></p>
+<p><font face="Arial">Vyplnění koeficientu pro přepočet měrné jednotky je
+řešeno stejně</font> <font face="Arial">jako v minulých letech. Pokud je
+koeficient různý od nuly, dělí se jím</font> <font face="Arial">množství.
+Jestliže je cena uvedena za tunu, ponechte v koeficientu nulu.</font> <font face="Arial">Jestliže
+je za metrák, dejte koeficient 10 (koeficientem se dělí</font> <font face="Arial">množství).</font></p>
+<p><font face="Arial">U těchto výrobků musí být uvedeny následující měrné
+jednotky</font> </p>
+<ul>
+  <li><font face="Arial">mléko - 1000 litrů - koeficient je 1000</font></li>
+  <li><font face="Arial">vejce - 1000 ks - koeficient 1000</font></li>
+  <li><font face="Arial">vlna - kg - koeficient 0<br>
+    </font></li>
+</ul>
+</blockquote>
+<p><font face="Arial"><b>KONTROLY<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b>Následující řádky berte jako 
+pomůcku, jak postupovat při úpravě dat v tabulkách.</font></p>
+<ul>
+	<li><font face="Arial">&nbsp;&lt;Ctrl_F10&gt; spustit kontroly&nbsp; PS x KS pro 
+	rozvahu. Pokud chcete kontrolovat např. pouze aktíva, označte celou skupinu 
+	kontrol 01 tak, že v seznamu kontrol najedete kurzorem na libovolnou 
+	kontrolu z této skupiny a klávesou &lt;Ctrl_F10&gt; jsou označeny všechny kontroly 
+	z této skupiny. <br>
+	Pokud se liší sloupec minulé účetní období od konečných stavů v minulém 
+	roce, lze převzít tyto stavy klávesou &lt;Alt_F5&gt; do tabulek D1. Aktíva, D2. 
+	Pasíva a F. Závazky.</font></li>
+	<li><font face="Arial">C. Práce a pracovní síly - pokud jsou u manažera 
+	podniku dva pracovněprávní vztahy, program napočte 2 přepočtené pracovníky.&nbsp; 
+	V tomto případě je nutno upravit na jednoho.</font></li>
+</ul>
+<p>&nbsp;</p>
+
+</body>
+
+</html>

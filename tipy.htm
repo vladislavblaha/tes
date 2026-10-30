@@ -1,0 +1,208 @@
+﻿<html>
+
+<head>
+<meta http-equiv="Content-Language" content="cs">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Tipy</title>
+<base target="_self">
+</head>
+
+<body bgcolor="#FFFFB3">
+
+<h2><font face="Arial"><b>Tipy pro práci s programem:</b></font></h2>
+<p><a href="prevody_zvirat.htm" target="_blank">Bilance ŽV</a>&nbsp;<a href="#Nastavení obrazovky na větší rozlišení"><br>
+Nastavení obrazovky
+na větší rozlišení</a><br>
+<a href="#Sloučení dat ze zásob z více počítačů">Sloučení dat ze zásob z více
+počítačů</a><br>
+<a href="#Uvolnění konvenční paměti pod Windows XP">
+Uvolnění konvenční paměti pod Windows XP</a><br>
+<a href="#Hromadné přečíslování výkonů">
+Hromadné přečíslování výkonů</a><br>
+<a href="#Hromadné přečíslování výkonů">Kontrola záporných hodnot ve 
+výsledovkách</a><br>
+<a href="#Naplnění tabulky Půda podle hektarů z bilancí RV">Naplnění
+tabulky Půda podle hektarů z bilancí RV</a><br>
+<a href="#Přepočet měrné jednotky mléčné kvóty v tabulce Kvóty">Přepočet
+měrné jednotky mléčné kvóty v tabulce Kvóty</a> (do roku 2015)<br>
+<a href="#Vyplnění přepočítací koeficientu při importu zásob">Vyplnění
+přepočítacího koeficientu při importu zásob</a><br>
+<a href="#Individuální nastavení číselníků pro každý podnik">Individuální
+nastavení číselníků pro každý podnik</a><br>
+<a href="#Výměra půdy v dotačním titulu Biopásy">Výměra půdy v dotačním
+titulu Biopásy</a><br>
+<a href="energeticke%20plodiny.htm">Postup zpracování energetických 
+	plodin</a> (do roku 2014)</p>
+<hr>
+<ul>
+  <li><font face="Arial"><b><a name="Nastavení obrazovky na větší rozlišení">Nastavení
+    obrazovky na větší rozlišení</a><br>
+    </b>Program je optimalizován pro práci v okně v režimech
+    až do rozsahu 60x132. Pokud máte dostatečně velké
+    rozlišení obrazovky a nevadí vám menší</font> <font face="Arial">písmo,
+    ale přivítáte větší množství zobrazovaných údajů, můžete si</font>
+    <font face="Arial">upravit spouštěcí dávku TES.BAT a před vlastním spuštěním
+    programu</font> <font face="Arial">aktivovat příkaz &quot;<b>mode con
+    lines=50</b>&quot;.<br>
+    <br>
+    </font></li>
+  <li><font face="Arial"><b><a name="Sloučení dat ze zásob z více počítačů">Sloučení
+    dat ze zásob z více počítačů<br>
+    </a></b>V nabídce <i> Nastavení-parametry</i> doplněn přepínač <i><b>
+    &lt;Připojit stavy zásob&gt;</b></i>.
+    Slouží pro případ, že máte zásoby v programu Finance na více stanicích a
+    neslučujte data na centrále. Pokud je potřeba importovat do programu TES více  souborů zásob,  zapněte přepínač  na
+    &lt;Ano&gt;.  Také přepínač <i><b> &lt;Připojit
+    obraty zásob&gt;</b></i> musí být zapnut na &lt;Ano&gt;.<br>
+    Bližší  popis  je  v  nápovědě  pod  klávesou Ctrl_F1 přímo na nastavení
+    přepínačů.<br>
+    <br>
+    </font></li>
+  <li><font face="Arial"><b><a name="Uvolnění konvenční paměti pod Windows XP">Uvolnění
+    konvenční paměti pod Windows XP<br>
+    </a></b>Programy vytvořené v prostředí PC FAND pracují pouze v základní
+    části operační paměti (v dolních 640 KB). <br>
+    Při spuštění programu MS-DOS pod WinXP je standardně k dispozici asi
+    608 KB volné paměti. Na některých počítačích z neznámých příčin
+    dá systém k dispozici cca 550 KB volné paměti. Příčinou je umístění
+    programu DOSX (53 KB) pro podporu DPMI programů do konvenční paměti a
+    nikoliv do horní paměti. Spuštění této podpory je řízeno souborem
+    AUTOEXEC.NT příkazem LH %SystemRoot%\system32\dosx.<br>
+    Pokud je k dispozici méně paměti, dojde při práci v rozsáhlejší pasáži
+    programu (např. vytvoření sestavy podle formulářů) k ukončení
+    programu s chybovým hlášením &quot;Nestačí paměť&quot;.<br>
+    <br>
+    Uvolnění paměti lze provést ve 3 krocích:<br>
+    <br>
+    1. Použít místo UFAND.EXE program UFANDB.EXE (Fand bez podpory grafů),
+    který má menší paměťové nároky o cca 8 KB. Pokud se rozhodnete pro
+    instalaci tohoto programu, změňte si v dávkovém souboru TES.BAT příkaz
+    pro spuštění na UFAND\UFANDB.EXE TES.RDB<br>
+    <br>
+    2. Můžete snížit vymezení pracovní oblasti fandu v paměti doplněním
+    příkazu SET FANDOVRB=80. Zadaná hodnota udává počet KB paměti. Pokud
+    příkaz není zadán, je implicitně vyhrazeno 124 KB. Povolené hodnoty
+    jsou 80 až 134. Použití tohoto příkazu teoreticky sníží rychlost
+    programu.<br>
+    <br>
+    </font><b>př. souboru TES.BAT</b><table border="1" width="19%" height="117">
+	<tr>
+		<td><b><font face="Courier New">@echo off<br>
+    mode con lines=50<br>
+    kb16 us<br>
+    set fandovrb=80<br>
+    ufand\ufandb.exe TES.RDB<br>
+    &nbsp;</font></b></td>
+	</tr>
+	</table>
+	<p><font face="Arial"><br>
+    3. Dále můžete vyřadit správu horní paměti pro podporu DPMI programů,
+    protože FAND s ní nepracuje. Protože je nutné brát ohled na jiné DOS
+    programy, které s horní pamětí pracují (MZDY, FINANCE, MAJETEK), nelze
+    vyřadit spuštění DOSX v souboru AUTOEXEC.NT v adresáři
+    WINDOWS\SYSTEM32. Pro tento účel je v adresáři UFAND vzorový soubor
+    FandAuto.NT. Použití tohoto nastavení prostředí pro spuštění
+    majetkových podílů uděláte tak, že k programu UFANDB.EXE vyvoláte
+    systémovou nabídku (klávesou ShiftF10 nebo pravým tlačítkem myši např.
+    v průzkumníkovi nebo v Total Commanderu). Vyberete &quot;Vlastnosti&quot;.
+    Vlezete na záložku &quot;Program&quot;. Zvolte tlačítko &quot;Upřesnit&quot;.
+    Do názvu souboru Autoexec zadejte absolutní cestu k náhradnímu souboru,
+    tedy C:\TES\UFAND\FANDAUTO.NT.<br>
+    <br>
+    </font></li>
+  <li><font face="Arial"><b><a name="Hromadné přečíslování výkonů">Hromadné
+    přečíslování výkonů</a> v nákladech a výnosech RV, ŽV, ostatních
+    výkonech</b>.<br>
+    Při úpravě souborů výsledovek se jistě setkáváte s potřebou sloučit
+    dva výkony (např. 100 a 101), nebo přečíslovat všechny řádky jednoho
+    výkonu na jiný. Na klávesu &lt;CtrlF10&gt; lze zadat číslo výkonu, na
+    který chcete změnit všechny záznamy pro výkon, na kterém jste
+    nastaveni kurzorem. Doporučuji dvakrát měřit a jednou řezat, protože
+    akce je nevratná. Pokud provedete přečíslování výkonu nevhodně, nezbývá
+    než opakovat import dat z účetnictví (postačí zatržená volba Náklady,výnosy).<br>
+&nbsp;</font></li>
+	<li><font face="Arial"><b>
+	<a name="Kontrola_záporných_hodnot_ve_výsledovkách">Kontrola záporných 
+	hodnot ve výsledovkách</a></b>.<br>
+    Klávesou &lt;Alt_F5&gt; lze vytvořit sestavu, která obsahuje záporné položky ve 
+	výsledovkách RV, ŽV a ostatních výkonů. V sestavě by se měly objevit pouze 
+	položky 640xxx (prodeje vlastních výrobků, přeřazení, technologické ztráty).<br>
+    </font></li>
+  <li><font face="Arial"><b><span style="font-size: 12.0pt"><a name="Naplnění tabulky Půda podle hektarů z bilancí RV">
+	Naplnění
+    tabulky Půda podle hektarů z bilancí RV</a></span></b><span style="font-size: 12.0pt"><br>Klávesa 
+	<b>Alt_F5</b>&nbsp; naplní tabulku půda podle hektarů z bilancí RV. Dále porovná výměru
+    z tabulky dotace z řádků Podpory méně příznivých oblastí na výměru
+    luk a pastvin. Podle zjištěného poměru je předvyplněna výměra LFA&nbsp;
+    v tabulce Půda. Tuto akci berte jako nouzovou pomůcku, pokud nemáte z
+    podniku přesně zjištěno rozdělení celkové výměry půdy do oblastí
+    LFA.<br>Klávesa <b>Alt_F4</b> spustí&nbsp; prohlížení souboru Půda z minulého roku (musí být přítomen
+    soubor D_PUDA z minulého roku).<br><br></span></font></li>
+  <li><b><font face="Arial"><a name="Přepočet měrné jednotky mléčné kvóty v tabulce Kvóty">Přepočet
+    měrné jednotky mléčné kvóty v tabulce Kvóty</a></font></b><font face="Arial"><br>
+    V tabulce <b>Kvóty&nbsp;</b> je pro údaj množství měrnou
+    jednotkou 1000 litrů. Protože mléčné kvóty jsou přidělovány a
+    evidovány v kilogramech, použijte pro přepočet následující
+    koeficient:<br>
+    <b><font color="#0000FF">
+    1 litr mléka = 1,027 kg&nbsp;<br>
+    1 kg</font></b></font><font color="#0000FF"><b><font face="Arial"> mléka = 0,971 litrů</font>&nbsp;<br>
+    </b>
+    </font><font face="Arial">
+    Př.&nbsp; Kvóta 2848763 kg = 2848763 x 0,971 = 2766148,873 litrů<br>
+    Pro usnadnění přepočtu&nbsp; můžete vyplnit do tabulky Kvóty hodnotu
+    v kilogramech a klávesou <b>Alt_F5 </b>zvolit přepočet množství z KG na
+    LITRY.
+    <br>
+    Množství kvóty se vykazuje podle stavu v IRM v držení podniku ke konci roku.<br>
+    <br>
+    </font></li>
+  <li><font face="Arial"><a name="Vyplnění přepočítací koeficientu při importu zásob"><b>Vyplnění
+    přepočítacího koeficientu při importu zásob</b></a><br>
+    <span style="FONT-SIZE: 12pt">Při editaci výkonů a výrobků zásob v průběhu
+    importu ze zásob lze předvyplnit přepočítací koeficient podle nastavení
+    přepínače Měrná jednotka produkce [Q/T] v nabídce Import - Účetnictví
+    stisknutím klávesy <b>Ctrl_F10</b>. Pokud podnik eviduje všechny zásoby
+    v metrácích, nemusíte pracně vyplňovat u všech položek přepočítací
+    koeficient 10.<br>
+    </span></font></li>
+</ul>
+
+<ul>
+  <li><font face="Arial"><a name="Individuální nastavení číselníků pro každý podnik"><b>Individuální
+    nastavení číselníků pro každý podnik</b></a><b>&nbsp;</b><br>
+    Doplněna možnost individuálního nastavení číselníků pro každý
+    zpracovávaný podnik a to</font>
+    <ul>
+      <li><font face="Arial">Výkony ZEIS</font></li>
+      <li><font face="Arial">Změna účtů</font></li>
+      <li><font face="Arial">Druhy pohybu zvířat</font></li>
+      <li><font face="Arial">Kategorie zvířat ZEIS</font></li>
+      <li><font face="Arial">Druhy pohybu zásob</font></li>
+    </ul>
+    <p><font face="Arial">Číselník pro podnik lze vytvořit při editaci klávesou
+    <b>&lt;Tabelátor&gt;</b> , která přepíná mezi číselníkem podnikovým
+    a společným pro ostatní podniky. Naplnění podnikového číselníku
+    distribučním číselníkem lze provést při editaci podnikového číselníku
+    klávesou <b>&lt;F10&gt;.</b>&nbsp;<br>
+    Podnikový číselník se ukládá do adresáře s IČ podniku do podadresáře
+    <b>CI</b> pod stejným názvem, jako má společný číselník. Pokud
+    program při výběru zpracovávaného podniku&nbsp; narazí na číselník
+    v tomto adresáři, pracuje s tímto číselníkem. O přítomnosti podnikového
+    číselníku je v levé části hlavní obrazovky dole vypsán název číselníku.<br>
+    Využitím podnikových číselníků byste mohli řešit porušování účtování&nbsp;
+    jednotlivých podniků v rozporu se vzorovou účtovou osnovou ZEIS.<br>
+    <br>
+    </font></li>
+  <li><p><font face="Arial"><b><a name="Výměra půdy v dotačním titulu Biopásy">Výměra
+    půdy v dotačním titulu Biopásy</a></b><br>
+    Výměru půdy osetou v rámci dotačního programu Biopásy uveďte do
+    bilancí RV pod výkonem 401 - úhor. Kód způsobu pěstování je <b>1</b>,
+    kód chybějící data j<span style="FONT-SIZE: 12pt">e nutno zadat <b>3.</b></span></font></li>
+</ul>
+
+</body>
+
+</html>

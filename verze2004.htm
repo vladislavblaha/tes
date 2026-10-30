@@ -1,0 +1,362 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="cs">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>TES - Popis verzí</title>
+</head>
+
+<body bgcolor="#FFFFB0" style="background-color: #FFFFB3">
+
+<h2><b><font face="Arial" size="4">Popis verzí pro rok</font><font face="Arial" size="3">&nbsp;
+<a href="verze.htm">2025</a></font><font face="Arial" size="4"> </font>
+<font face="Arial" size="3"><a href="verze2024.htm">2024</a>&nbsp; 
+<a href="verze2023.htm">2023</a>&nbsp;&nbsp;
+<a href="verze2022.htm">2022</a>&nbsp;
+<a href="verze2021.htm">2021</a>&nbsp; 
+<a href="verze2020.htm">2020</a></font><font face="Arial" size="4">&nbsp; </font>
+<font face="Arial" size="3"> <a href="verze2019.htm">2019</a></font><font face="Arial" size="4">&nbsp; </font>
+<font face="Arial" size="3"> <a href="verze2018.htm">2018</a> </font><font face="Arial" size="4"> &nbsp;</font><font face="Arial" size="3"><a href="verze2017.htm">2017</a>&nbsp;
+<a href="verze2016.htm">2016</a>&nbsp;
+<a href="verze2015.htm">2015</a>&nbsp;
+<a href="verze2014.htm">2014</a>&nbsp;
+<a href="verze2013.htm">2013</a>&nbsp;
+<a href="verze2012.htm">2012</a>&nbsp;
+<a href="verze2011.htm">2011</a>&nbsp;
+<a href="verze2010.htm">2010</a>&nbsp;
+<a href="verze2009.htm">2009</a>&nbsp;
+<a href="verze2008.htm">2008</a>&nbsp;
+<a href="verze2007.htm">2007</a>&nbsp;
+<a href="verze2006.htm">2006</a>&nbsp; <a href="verze2005.htm">2005</a>&nbsp;
+2004&nbsp; <a href="verze2003.htm">2003</a>&nbsp; <a href="verze2002.htm">2002</a></font></b></h2>
+<hr>
+<h3><b><font face="Arial">Změny ve verzi 6.04</font></b></h3>
+<p><font face="Arial">Co se týče převodů prasat a ovcí, předpokládám, že
+kontroly převodů jste obešli jednoduše tak, jak bylo navrženo v popisu k
+verzi 6.03.</font></p>
+<p><font face="Arial">U skotu jsem postupoval následovně:</font></p>
+<p><font face="Arial">U nejmladší kategorie zvířat jsem klávesou CtrlF10
+obrátil znaménka u telat u položky obratu 17-převod příjem a tuto položku
+jsem změnil na 29-převod výdej.</font></p>
+<p><font face="Arial">Do kontrol vazeb ve verzi 6.04 jsem doplnil kontroly č.
+46 - převody skot. Tyto kontroly hromadně označím klávesou CtrlF10.</font></p>
+<p><font face="Arial">Po spuštění těchto kontrol se zobrazí rozdíl po
+jednotlivých kontrolách. Pokud podnik nemá současně masný skot, krávy bez
+tržní produkce a dojnice, zpravidla vám z jedné kontroly nějaký počet kusů
+přebývá, u další kontroly tentýž počet chybí. Takovýto rozdíl je
+zpravidla způsoben tím, že v ZEISu není používán výkon, který se převádí
+na výkon 791, 792, 794 a kontroly převodů vyžadují použití všech výkonů
+zvířat.</font></p>
+<p><font face="Arial">Téměř u všech podniků mi např. chybí použití výkonu
+794-jalovice do 2 let. Převody jsou vykazovány z výkonu 792 na výkon 796.
+Kontrola vyžaduje převod z 792 do 794 a následně z 794 do 796.</font></p>
+<p><font face="Arial">Kontroly se snažím obcházet tak, že pro chybějící
+kategorii doplním převod (+) a v těch samých hodnotách převod (-).</font></p>
+<p><font face="Arial">př.</font></p>
+<table border="1" width="45%" height="75">
+  <tr>
+    <td width="54%" height="25"></td>
+    <td width="14%" height="25">A</td>
+    <td width="11%" height="25">B</td>
+    <td width="21%" height="25">C</td>
+  </tr>
+  <tr>
+    <td width="54%" height="25"><font face="Courier New">46-Převody
+792-&gt;794</font></td>
+    <td width="14%" height="25">191</td>
+    <td width="11%" height="25">0</td>
+    <td width="21%" height="25">191</td>
+  </tr>
+  <tr>
+    <td width="54%" height="25"><font face="Courier New">
+46-Převody 794 -&gt;796,797</font></td>
+    <td width="14%" height="25">0</td>
+    <td width="11%" height="25">191</td>
+    <td width="21%" height="25">-191</td>
+  </tr>
+</table>
+<p><font face="Arial">Je potřeba do bilancí ŽV doplnit kategorii 794 s převody
+jak v kusech, tak v kg a Kč.</font></p>
+<p><font face="Courier New">Výk Pol Ks Množství Kč</font></p>
+<p><font face="Courier New">794 01 0 0 0<br>
+794 02 0 1 0<br>
+794 17 191 108460 3839941,70<br>
+794 29 191 108460 3839941,70</font></p>
+<p><font face="Arial">Pro zjednodušení této operace lze využít kontrol
+vazeb. Při zobrazení výsledků kontrol je potřeba nastavit kurzor na tu
+kontrolu, pro kterou chci upravit prvotní data, která jsou do kontroly načítána.</font></p>
+<p><font face="Arial">př.</font></p>
+<p><font face="Courier">46</font><font face="Courier New">-Převody 792-&gt;794 191.00 0.00 191.00</font></p>
+<p>&nbsp;<font face="Arial">Po stisknutí klávesy F10 se zobrazí definice kontroly.</font></p>
+<p><font face="Courier">4</font><font face="Courier New">6-Převody 792-&gt;794 d_bizv 792 792 29 01 A<br>
+46-Převody 792-&gt;794 d_bizv 794 794 17 01 B</font></p>
+<p><font face="Arial">V této definici je potřeba se nastavit na řádek s výkonem
+a položkou obratu, pro který chci upravit prvotní data v souboru bilancí ŽV.
+Protože chci doplnit pro výkon 794 položku 17 - převod (+), postavím se na
+druhý řádek.</font></p>
+<p>&nbsp;<font face="Arial">Klávesou Enter se spustí úprava dat, která spočívá
+v tom, že se podle definice kontroly napočtou kusy, kg a Kč, je zjištěn
+rozdíl mezi hodnotami napočtenými do hodnoty A a B. Do souboru bilancí je přidán
+nový záznam pro výkon z řádku kontroly, který byl vybrán klávesou Enter</font></p>
+<p><font face="Arial">př.</font></p>
+<p><font face="Courier New">Výk Pol Ks Množství Kč</font></p>
+<p><font face="Courier New">794 17 191 108460 3839941,70</font></p>
+<p>&nbsp;<font face="Arial">Protože chci doplnit i výdej z převodu, přesunu se na
+následující kontrolu</font></p>
+<p><font face="Arial">př.</font></p>
+<p><font face="Courier New">46-Převody 794 -&gt;796,797 0.00 191.00 -191.00</font></p>
+<p>&nbsp;<font face="Arial">Po stisknutí klávesy F10 se zobrazí definice kontroly.</font></p>
+<p><font face="Courier New">46-Převody 794 -&gt;796,797 d_bizv 794 794 29 01 A<br>
+46-Převody 794 -&gt;796,797 d_bizv 796 796 17 01 B<br>
+46-Převody 794 -&gt;796,797 d_bizv 797 797 17 01 B</font></p>
+<p><font face="Arial">V této definici je potřeba se nastavit na řádek s výkonem
+a položkou obratu, pro který chci upravit prvotní data v souboru bilancí ŽV.
+Protože chci doplnit pro výkon 794 položku 29 - převod (-), postavím se na
+první řádek.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial">Do souboru bilancí je přidán nový záznam pro výkon z
+řádku kontroly, který byl vybrán klávesou Enter</font></p>
+<p><font face="Arial">př.</font></p>
+<p><font face="Courier New">Výk Pol Ks Množství Kč<br>
+</font><font face="Courier New">794 29 191 108460 3839941,70</font></p>
+<p><font face="Arial">Z výsledků kontrol se vrátím do editace souboru bilancí
+ŽV, k výkonu 794 doplním položku obratu 01-chybějící data a 02-krmné
+dny. Kontrola pouští i 1 krmný den, takže uvádím 1.</font></p>
+<p><font face="Arial">Pokud přistoupíte k těmto úpravám, doporučuji zazálohovat
+si soubory D_BIZV před úpravami.</font></p>
+<p><font face="Arial">Pro pochopení tohoto postupu doporučuji začít s
+podnikem, který nemá kombinaci masného a mléčného skotu. Tam by tato úprava
+měla trvat pár minut.</font></p>
+<p><font face="Arial">&nbsp;</font><font face="Arial">U podniků s masným plemenem mám ten problém, že se
+používá buď jenom výkon 710 - masné krávy, nebo nanejvýš 800 - telata
+masná. Tím pádem jsou všechny mladá masná zvířata evidována společně
+s dojným plemenem. Data takového podniku se snažím upravit tak, že např.
+na výkonu 791-býci do 1 roku snížím počáteční stav a na výkonu 801-býci
+do 1 roku masní tento počáteční stav doplním. Pokud je výkonu uveden počáteční
+nebo konečný stav, nastává komplikace s počtem krmných dnů. Takže je potřeba
+stejným způsobem přesunout i KD.</font></p>
+<p><font face="Arial">&nbsp;</font><font face="Arial">Do jaké míry bude výše uvedený postup schůdný jsem
+se z VÚZE doposud nedozvěděl.</font></p>
+<hr>
+<h3><b><font face="Arial">Změny ve verzi 6.03</font></b></h3>
+<ul>
+  <li>
+    <p style="MARGIN-TOP: 6pt; mso-layout-grid-align: none"><font face="Arial">Upraveny kontroly vazeb. Jednotlivé kontroly jsou rozděleny do skupin
+(skupinou jsou myšleny kontroly označené na prvních dvou místech stejným
+číslem). Při spuštění kontroly lze celou skupinu označit klávesou
+Ctrl+F10.</font></li>
+  <li>
+    <p style="MARGIN-TOP: 6pt; mso-layout-grid-align: none"><font face="Arial">Hromadné přečíslování výkonů v nákladech a výnosech RV, ŽV,
+ostatních výkonech.<br>
+    Při úpravě souborů výsledovek se jistě setkáváte
+s potřebou sloučit dva výkony (např. 100 a 101), nebo přečíslovat všechny
+řádky jednoho výkonu na jiný. Na klávesu Ctrl+F10 lze zadat číslo výkonu,
+na který chcete změnit všechny záznamy pro výkon, na kterém jste nastaveni
+kurzorem. Doporučuji dvakrát měřit a jednou řezat, protože akce je nevratná.
+Pokud provedete přečíslování výkonu nevhodně, nezbývá než opakovat import dat z účetnictví (postačí zatržená volba Náklady,výnosy).</font></li>
+  <li>
+    <p style="MARGIN-TOP: 6pt; mso-layout-grid-align: none"><font face="Arial">Převody zvířat v tabulce G.Bilance ŽV.<br>
+    Pokusil jsem se upravovat převody prasat tak, aby bylo vyhověno
+kontrolám č. P2033, P2034. Data lze upravit tak, že na výkonu 728-selata je
+potřeba otočit hodnoty pro položku obratu 17 (převod+) a změnit ji na 29 (převod-). Tedy sloučit je k sobě. Kontroly na VUZE vyžadují,
+aby u kategorie zvířat, kde dochází k narození nebyl vykazován převod+. U
+    kategorie 722-výkrm prasat je zase potřeba obrátit znaménka u položky
+obratu 29 (převod-) a změnit ji na 17.<br>
+Tato jednoduchá úprava postačila na většině mých podniků.<br>
+Pro zjednodušení této úpravy je v bilancích ŽV možno použít klávesu
+Ctrl+F10, která na aktuálním záznamu obrátí znaménka u hodnot.</font></li>
+</ul>
+<hr>
+<h3><b><font face="Arial">Změny ve verzi 6.02</font></b></h3>
+<ul>
+  <li>
+    <p style="MARGIN-TOP: 6pt; mso-layout-grid-align: none"><font face="Arial">Při<span style="mso-spacerun: yes">&nbsp; </span>importu<span style="mso-spacerun: yes">&nbsp;
+</span>dat<span style="mso-spacerun: yes">&nbsp; </span>z<span style="mso-spacerun: yes">&nbsp;
+</span>účetnictví<span style="mso-spacerun: yes">&nbsp; </span>byl<span style="mso-spacerun: yes">&nbsp;
+</span>opačně<span style="mso-spacerun: yes">&nbsp; </span>nastaven přepočet
+měrné <span style="mso-spacerun: yes">&nbsp;&nbsp;</span>jednotky Q - T.</font></li>
+  <li>
+    <p style="MARGIN-TOP: 6pt; mso-layout-grid-align: none"><font face="Arial">Upraveny kontroly vazeb.</font></li>
+  <li>
+    <p style="MARGIN-TOP: 6pt; mso-layout-grid-align: none"><font face="Arial">Rozšířen import EMA00020.DBF z verze 7.</font></li>
+  <li>
+    <p style="MARGIN-TOP: 6pt; mso-layout-grid-align: none"><font face="Arial">Opraveno součtování v XML souboru pro tabulku Dlouhodobý majetek<br>
+    </font></li>
+</ul>
+<hr>
+<h3><b><font face="Arial">Změny ve verzi 6.01</font></b></h3>
+<ul>
+  <li>
+    <p style="MARGIN-TOP: 6pt; mso-layout-grid-align: none"><font face="Arial">Upraven import DHM. Nepřipočítávaly se meliorace ke stavbám.</font></li>
+</ul>
+<hr>
+<h3><b><font face="Arial">Změny ve verzi 6.00</font></b></h3>
+<ul>
+  <li>
+    <p style="MARGIN-TOP: 6pt; TEXT-ALIGN: justify; mso-layout-grid-align: none"><font face="Arial"><b>Identifikace
+    podniku</b> - vstupní list je podobný jako v předchozím roce, <span style="mso-spacerun: yes">&nbsp;&nbsp;</span>Pouze
+    ubyly údaje o výměrách půdy zařazených do LFA.</font></li>
+  <li>
+    <p style="MARGIN-TOP: 6pt; TEXT-ALIGN: justify; mso-layout-grid-align: none"><font face="Arial"><b>Půdní
+    fond<br>
+    </b>Tabulka byla rozšířena o výměry půdy zařazené do LFA. Výměra
+    je tak<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>vykazována jak<span style="mso-spacerun: yes">&nbsp;
+    </span>podle druhu a vlastnictví<span style="mso-spacerun: yes">&nbsp; </span>pozemku,
+    tak podle zařazení<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>do méně
+    příznivých oblastí.</font></li>
+  <li>
+    <p style="MARGIN-TOP: 6pt; TEXT-ALIGN: justify; mso-layout-grid-align: none"><font face="Arial"><b>Pracovní
+    síly<o:p>
+    &nbsp;<br>
+    </b>Na rozdíl od loňského roku jsou počty pracovníků podle jednotlivých<span style="mso-spacerun: yes">&nbsp;&nbsp;
+    </span>skupin<span style="mso-spacerun: yes">&nbsp; </span>uváděny<span style="mso-spacerun: yes">&nbsp;
+    </span>ne<span style="mso-spacerun: yes">&nbsp; </span>již<span style="mso-spacerun: yes">&nbsp;
+    </span>podle<span style="mso-spacerun: yes">&nbsp; </span>přepočtu<span style="mso-spacerun: yes">&nbsp;
+    </span>odpracovaných hodin, ale je<span style="mso-spacerun: yes">&nbsp;&nbsp;
+    </span>zjišťován průměrný evidenční počet osob. Ten je zjišťován
+    z vykázaných<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>dnů
+    pracovního poměru u DRMZ 1001 a porovnáván na kalendářní počet dnů<span style="mso-spacerun: yes">&nbsp;&nbsp;
+    </span>v měsíci.&nbsp;</font></li>
+  <li>
+    <p style="MARGIN-TOP: 6pt; TEXT-ALIGN: justify; mso-layout-grid-align: none"><font face="Arial">Tabulky<span style="mso-spacerun: yes">&nbsp;
+    </span><b>Aktiva,<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>Pasiva,<span style="mso-spacerun: yes">&nbsp;
+    </span>Zisky<span style="mso-spacerun: yes">&nbsp; </span>a<span style="mso-spacerun: yes">&nbsp;
+    </span>ztráty </b><span style="mso-spacerun: yes">&nbsp;&nbsp;</span>-<span style="mso-spacerun: yes">&nbsp;
+    </span>upraveny<span style="mso-spacerun: yes">&nbsp; </span>v<span style="mso-spacerun: yes">&nbsp;
+    </span>souladu<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>s
+    metodikou státních výkazů.&nbsp;</font></li>
+  <li>
+    <p style="MARGIN-TOP: 6pt; TEXT-ALIGN: justify; mso-layout-grid-align: none"><font face="Arial"><b>Podrobnější
+    členění údajů </b>- beze změn.</font></li>
+  <li>
+    <p style="MARGIN-TOP: 6pt; TEXT-ALIGN: justify; mso-layout-grid-align: none"><font face="Arial"><b>Dlouhodobý<span style="mso-spacerun: yes">&nbsp;
+    </span>majetek<o:p>
+    &nbsp;<br>
+    </b>Stavy<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>na<span style="mso-spacerun: yes">&nbsp;&nbsp;
+    </span>počátku<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>a<span style="mso-spacerun: yes">&nbsp;&nbsp;
+    </span>konci<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>účetního<span style="mso-spacerun: yes">&nbsp;&nbsp;
+    </span>období<span style="mso-spacerun: yes">&nbsp; </span>jsou<span style="mso-spacerun: yes">&nbsp;
+    </span>uváděny<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>v pořizovacích
+    cenách<span style="mso-spacerun: yes">&nbsp; </span>a zůstatkových cenách.<span style="mso-spacerun: yes">&nbsp;
+    </span>Nově je uváděn<span style="mso-spacerun: yes">&nbsp; </span>sloupec<span style="mso-spacerun: yes">&nbsp;&nbsp;
+    </span>&quot;Prodej v tržních<span style="mso-spacerun: yes">&nbsp; </span>cenách&quot;
+    (účet 641). Do tabulky<span style="mso-spacerun: yes">&nbsp; </span>je
+    zahrnován i jiný<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>dlouhodobý<span style="mso-spacerun: yes">&nbsp;
+    </span>hmotný majetek,<span style="mso-spacerun: yes">&nbsp; </span>dlouhodobý
+    finanční<span style="mso-spacerun: yes">&nbsp; </span>majetek a dlouhodobý<span style="mso-spacerun: yes">&nbsp;
+    &nbsp;</span>nehmotný<span style="mso-spacerun: yes">&nbsp; </span>majetek,
+    tedy<span style="mso-spacerun: yes">&nbsp; </span>celý oddíl<span style="mso-spacerun: yes">&nbsp;
+    </span>B aktiv.<span style="mso-spacerun: yes">&nbsp; </span>Protože tyto
+    nové údaje<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>nejsou obsaženy<span style="mso-spacerun: yes">&nbsp;
+    </span>v matričním souboru majetku<span style="mso-spacerun: yes">&nbsp; </span>na
+    inventárních kartách,<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>byl
+    rozšířen import dat z účetnictví o naplnění této tabulky. Definice<span style="mso-spacerun: yes">&nbsp;&nbsp;
+    </span>naplnění jednotlivých<span style="mso-spacerun: yes">&nbsp; </span>polí
+    je popsána<span style="mso-spacerun: yes">&nbsp; </span>v číselníku
+    &quot;Výkazy-dlouhodobý<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>majetek&quot;.<br>
+    <br>
+    Protože naplnění<span style="mso-spacerun: yes">&nbsp; </span>souboru
+    dlouhodobý majetek<span style="mso-spacerun: yes">&nbsp; </span>je prováděno
+    ze<span style="mso-spacerun: yes">&nbsp; </span>dvou<span style="mso-spacerun: yes">&nbsp;&nbsp;
+    </span>souborů je<span style="mso-spacerun: yes">&nbsp; </span>nutné dodržet
+    pořadí<span style="mso-spacerun: yes">&nbsp; </span>importu tak, že<span style="mso-spacerun: yes">&nbsp;
+    </span>nejdříve zpracujete<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>matriční
+    soubor majetku<span style="mso-spacerun: yes">&nbsp; </span>a pak budete
+    importovat data<span style="mso-spacerun: yes">&nbsp; </span>z hlavní
+    knihy.<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>Import<span style="mso-spacerun: yes">&nbsp;
+    </span>dat<span style="mso-spacerun: yes">&nbsp; </span>z<span style="mso-spacerun: yes">&nbsp;
+    </span>majetku<span style="mso-spacerun: yes">&nbsp; </span>totiž<span style="mso-spacerun: yes">&nbsp;
+    </span>vždy<span style="mso-spacerun: yes">&nbsp; </span>nejdříve<span style="mso-spacerun: yes">&nbsp;
+    </span>tabulku<span style="mso-spacerun: yes">&nbsp; </span>s dlouhodobým<span style="mso-spacerun: yes">&nbsp;&nbsp;
+    </span>majetkem vymaže<span style="mso-spacerun: yes">&nbsp; </span>a začne
+    jí<span style="mso-spacerun: yes">&nbsp; </span>naplňovat znovu. Import<span style="mso-spacerun: yes">&nbsp;
+    </span>z účetnictví pak<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>nejdříve
+    vymaže pole, do kterých<span style="mso-spacerun: yes">&nbsp; </span>je
+    zdefinován nápočet z hlavní knihy<span style="mso-spacerun: yes">&nbsp;&nbsp;
+    </span>a pak<span style="mso-spacerun: yes">&nbsp; </span>tato pole<span style="mso-spacerun: yes">&nbsp;
+    </span>naplňuje.<br>
+    <br>
+    V číselníku import dat z hlavní<span style="mso-spacerun: yes">&nbsp; </span>knihy
+    je definován nápočet tržeb z<span style="mso-spacerun: yes">&nbsp;&nbsp;
+    </span>prodeje dlouh.<span style="mso-spacerun: yes">&nbsp; </span>majetku.
+    Protože nelze rozdělit<span style="mso-spacerun: yes">&nbsp; </span>tyto
+    tržby za stavby,<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>stroje
+    a pozemky,<span style="mso-spacerun: yes">&nbsp; </span>je celá částka tržeb
+    bez<span style="mso-spacerun: yes">&nbsp; </span>základního stáda doplněna<span style="mso-spacerun: yes">&nbsp;&nbsp;
+    </span>do řádku 050 - za samostatné movité věci. Nutno rozdělit ručně.<br>
+    <br>
+    Do dlouhodobého<span style="mso-spacerun: yes">&nbsp; </span>majetku je také<span style="mso-spacerun: yes">&nbsp;
+    </span>doplněn řádek 4<span style="mso-spacerun: yes">&nbsp; </span>-
+    prostředky pro<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>zlepšování
+    půdy.<span style="mso-spacerun: yes">&nbsp; </span>Zejména jsou tím myšleny<span style="mso-spacerun: yes">&nbsp;
+    </span>meliorace, drenáže a fixní<span style="mso-spacerun: yes">&nbsp;&nbsp;
+    </span>zavodňovací systémy. Při přetřídění majetku v<span style="mso-spacerun: yes">&nbsp;
+    </span>SKP 46 v roce 2004 jsem<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>pro
+    tyto předměty<span style="mso-spacerun: yes">&nbsp; </span>použil SKP
+    46.99.65. V převodním<span style="mso-spacerun: yes">&nbsp; </span>číselníku
+    je toto<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>SKP přiřazeno
+    řádku<span style="mso-spacerun: yes">&nbsp; </span>4 tabulky Dl.majetek.
+    Pokud jste<span style="mso-spacerun: yes">&nbsp; </span>u svých podniků<span style="mso-spacerun: yes">&nbsp;&nbsp;
+    </span>používali<span style="mso-spacerun: yes">&nbsp; </span>jiné SKP,<span style="mso-spacerun: yes">&nbsp;
+    </span>můžete si<span style="mso-spacerun: yes">&nbsp; </span>distribuční
+    číselník<span style="mso-spacerun: yes">&nbsp; </span>pro převod<span style="mso-spacerun: yes">&nbsp;
+    </span>SKP<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>upravit. V
+    souvislosti s tímto problémem byl upraven import MS majetku<span style="mso-spacerun: yes">&nbsp;&nbsp;
+    </span>tak, že je v úvodu nabídnut soubor EMA00020.DBF k editaci. Upozorňuji,<span style="mso-spacerun: yes">&nbsp;&nbsp;
+    </span>že<span style="mso-spacerun: yes">&nbsp; </span>je přímo<span style="mso-spacerun: yes">&nbsp;
+    </span>editován tento<span style="mso-spacerun: yes">&nbsp; </span>soubor.
+    V<span style="mso-spacerun: yes">&nbsp; </span>průběhu editace můžete změnit<span style="mso-spacerun: yes">&nbsp;&nbsp;
+    </span>SKP. Pro vyhledání meliorací je předvyplněna podmnožina, kterou
+    můžete<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>zapnout<span style="mso-spacerun: yes">&nbsp;
+    </span>klávesou F5.<span style="mso-spacerun: yes">&nbsp; </span>Dále můžete<span style="mso-spacerun: yes">&nbsp;
+    </span>překontrolovat existenci použitých<span style="mso-spacerun: yes">&nbsp;&nbsp;
+    </span>SKP klávesou F6-kontroly.</font></li>
+  <li>
+    <p style="MARGIN-TOP: 6pt; TEXT-ALIGN: justify; mso-layout-grid-align: none"><font face="Arial"><b>Závazky</b>
+    - beze změn</font></li>
+  <li>
+    <p style="MARGIN-TOP: 6pt; TEXT-ALIGN: justify; mso-layout-grid-align: none"><font face="Arial"><b>Bilance
+    RV,<span style="mso-spacerun: yes">&nbsp; </span>ŽV a ostatních výrobků<o:p>
+    </o:p>
+    <br>
+    </b>Nově zařazeny<span style="mso-spacerun: yes">&nbsp; </span>ostatní příjmy
+    a<span style="mso-spacerun: yes">&nbsp; </span>ostatní výdeje. Do<span style="mso-spacerun: yes">&nbsp;
+    </span>těchto položek<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>jsou
+    načítány ty<span style="mso-spacerun: yes">&nbsp; </span>druhy pohybů ze
+    zásob a<span style="mso-spacerun: yes">&nbsp; </span>zvířat, které jsou
+    účtovány<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>mimo účty
+    613 a 614.<br>
+    Byl upraven<span style="mso-spacerun: yes">&nbsp; </span>číselník plodin
+    podle<span style="mso-spacerun: yes">&nbsp; </span>nové metodiky. V<span style="mso-spacerun: yes">&nbsp;
+    </span>souvislosti s<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>tím
+    se změnil i číselník ZEIS,<span style="mso-spacerun: yes">&nbsp; </span>který
+    definuje převod mezi výkony ZEIS<span style="mso-spacerun: yes">&nbsp;&nbsp;
+    </span>a plodinami ve FADN.<br>
+    V<span style="mso-spacerun: yes">&nbsp; </span>bilancích ostatních<span style="mso-spacerun: yes">&nbsp;
+    </span>a pomocných<span style="mso-spacerun: yes">&nbsp; </span>výrobků
+    je<span style="mso-spacerun: yes">&nbsp; </span>pro siláž,<span style="mso-spacerun: yes">&nbsp;
+    </span>senáž,<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>seno a výrobu
+    krmných směsí změněno číslo výrobku na 823 (dosud 821).</font></li>
+  <li>
+    <p style="MARGIN-TOP: 6pt; TEXT-ALIGN: justify; mso-layout-grid-align: none"><font face="Arial"><b>Dotace<o:p>
+    </o:p>
+    <br>
+    </b>Asi<span style="mso-spacerun: yes">&nbsp; </span>největší oříšek.<span style="mso-spacerun: yes">&nbsp;
+    </span>Vykazuje<span style="mso-spacerun: yes">&nbsp; </span>se<span style="mso-spacerun: yes">&nbsp;
+    </span>jak naturální<span style="mso-spacerun: yes">&nbsp; </span>množství,
+    podle<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>kterého<span style="mso-spacerun: yes">&nbsp;
+    </span>se dotace<span style="mso-spacerun: yes">&nbsp; </span>přiděluje
+    (hektary,<span style="mso-spacerun: yes">&nbsp; </span>ks, tuny,<span style="mso-spacerun: yes">&nbsp;
+    </span>VDJ apod.),<span style="mso-spacerun: yes">&nbsp; </span>tak i<span style="mso-spacerun: yes">&nbsp;&nbsp;
+    </span>nárok na dotaci a skutečný příjem peněz.</font></li>
+  <li>
+    <p style="MARGIN-TOP: 6pt; TEXT-ALIGN: justify; mso-layout-grid-align: none"><font face="Arial"><b>Šetření
+    o nákladech</b> - beze změn.</font></li>
+</ul>
+<hr>
+
+</body>
+
+</html>
