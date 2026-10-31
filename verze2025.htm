@@ -1,0 +1,236 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="cs">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>TES - Popis verzí</title>
+<base target="_self">
+</head>
+
+<body bgcolor="#FFFFB3">
+
+<h2><b><font face="Arial" size="4">Popis verzí pro rok </font>
+<font face="Arial" size="3"><a href="verze.htm">2026</a>&nbsp; 2025&nbsp; <a href="verze2024.htm">
+2024</a>&nbsp; <a href="verze2023.htm">2023</a>&nbsp; <a href="verze2022.htm">2022</a>&nbsp; <a href="verze2021.htm">2021</a>&nbsp; <a href="verze2020.htm">2020</a>&nbsp; <a href="verze2019.htm">2019</a>&nbsp; <a href="verze2018.htm">2018</a>&nbsp; <a href="verze2017.htm">2017</a>&nbsp; <a href="verze2016.htm">2016</a>&nbsp; <a href="verze2015.htm">2015</a>&nbsp;
+<a href="verze2014.htm">2014</a>&nbsp;
+<a href="verze2013.htm">2013</a>&nbsp; <a href="verze2012.htm">2012</a>&nbsp; 
+<a href="verze2011.htm">2011</a>&nbsp; 
+<a href="verze2010.htm">2010</a>&nbsp; <a href="verze2009.htm">2009</a>&nbsp; <a href="verze2008.htm">2008</a>&nbsp;
+<a href="verze2007.htm">2007</a>&nbsp;
+<a href="verze2006.htm">2006</a>&nbsp;
+<a href="verze2005.htm">2005</a>&nbsp; <a href="verze2004.htm">2004</a>&nbsp;
+<a href="verze2003.htm">2003</a>&nbsp; <a href="verze2002.htm">2002</a></font></b></h2>
+<hr>
+
+<h3><font face="Arial"><b>Změny ve verzi 27.06</b></font></h3>
+<p><font face="Arial"><b>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</b>Verzi 27.06 ze dne 
+9.7.2026&nbsp; stáhněte zde&nbsp;...<b>&nbsp;&nbsp;<a href="2025/tes_2706_setup.exe"><img border="0" src="IMG/disketa.gif" width="16" height="16"></a>&nbsp;&nbsp;</b></font></p>
+<ul>
+	<li><font face="Arial">Upraven export dat z tabulky &lt;A. Identifikace&gt; do XML v souvislosti 
+	s přejmenováním položky ROK na ROK_EKO.</font></li>
+	<li><font face="Arial">Upraven export dat z&nbsp; tabulky &lt;SE. Služby&gt; do XML. 
+	Někdy hlásilo, že soubor není setříděn. </font></li>
+</ul>
+
+<hr>
+
+<h3><font face="Arial"><b>Změny ve verzi 27.05</b></font></h3>
+<p><font face="Arial"><b>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</b>Verzi 27.05 ze dne 
+12.5.2026 <b>
+&nbsp;</b>stáhněte zde&nbsp;...<b>&nbsp;&nbsp;<a href="2025/tes_2705_setup.exe"><img border="0" src="IMG/disketa.gif" width="16" height="16"></a>&nbsp;&nbsp;</b></font></p>
+<ul>
+	<li><font face="Arial">Upraven export dat z tabulky &lt;G1. Zvířata&gt; do 
+	XML v souvislosti se zavedením nových položek obratu 77,78,79,80,81. Při 
+	exportu bylo přepočítáváno množství u drůběže (kategorie 047, 048, 049).<br>
+	Proto byla rozšířena definice v číselníku&nbsp; <b>&lt;5. Položky bilance ŽV&gt;
+	</b>o nastavení pro každou položku obratu, zda u ní přepočítávat množství 
+	při exportu do XML souboru. </font></li>
+</ul>
+
+<hr>
+
+<h3><font face="Arial"><b>Změny ve verzi 27.04</b></font></h3>
+<p><font face="Arial"><b>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</b>Verzi 27.04 ze dne 
+7.5.2026 </font></p>
+<ul>
+	<li><font face="Arial">Upraven export dat z tabulky <b>&lt;G1. Zvířata&gt;</b> do 
+	XML v souvislosti se zavedením kontroly S0718 - Přístup na dvůr není 
+	vyplněn, nebo je špatně vyplněn a kontroly S0720 - Doba pastvy není 
+	vyplněna. Při těchto kontrolách se pracuje s novými položkami obratu bilancí 
+	ŽV 80-doba pastvy a 81-přístup na dvůr. Ve všech předchozích verzích se 
+	jednotlivá pole tabulky G1 exportovala pouze v případě, že byla nenulová. 
+	Toto omezení je zrušeno pro pole Množství, protože se jeho prostřednictvím 
+	předává informace o přístupu na dvůr 0-NE, 1-ANO. Pokud je na portálu FADN 
+	zakázáno jakékoliv vyplnění údaje, je nutno celý řádek s položkou obratu 81 
+	smazat,&nbsp; pak se neexportuje žádná informace o přístupu na dvůr.<br>
+	Byl upraven číselník <b>&lt;Náplň bilancí ŽV z výsledovky &gt; </b>&nbsp;<br>
+	- <b> <u>80 - Doba pastvy</u></b> - zdefinováno naplnění při výskytu krmných 
+	dnů pro kategorii dojnice (předvyplní se do množství 0 dnů),&nbsp; pro 
+	kategorii masné krávy, bahnice a kozy&nbsp; se předvyplní&nbsp; počet 
+	krmných dnů (předpoklad celoroční pastvy). Pokud se liší od skutečnosti, je 
+	třeba množství v položce obratu 80 upravit. Vyplňuje se tedy pouze u výkonu 
+	030, 032, 038, 040. Pro tyto výkony si do množství položky obratu 80 
+	doklepněte krmné dny, nebo 365 dnů, podle toho co bude chtít kontrolor.<br>- <b> <u>81 - Přístup na dvůr</u></b> - zdefinováno 
+	naplnění při výskytu krmných dnů pro všechny kategorii zvířat. Do množství 
+	se předvyplní 0-není přístup na dvůr. Aby šlo nějak detekovat, zda je pro 
+	daný výkon vytvořena položka obratu 81, ukládá se do Kč počet krmných dnů z 
+	výsledovky. Toho je využito v nové kontrole F9 - kontrola za výkony s č. <b>
+	29 - Přístup na dvůr x Ustájení. </b>V ní je zjištěn vyplněný typ ustájení. 
+	Pokud je použito ustájení 50-pastva, nesmí být položka přístup na dvůr 
+	vyplněna. Chybu z kontroly odstraníte smazáním položky obratu 81 - přístup 
+	na dvůr. <br>
+	Pokud tuto kontrolu chcete použít u již naimportovaných podniků, je potřeba 
+	si do položky obratu 81 do sloupce Kč doplnit libovolnou hodnotu, aby tím 
+	byl navozen stav, jak by to vypadalo po opakovaném importu. Vím, jak je 
+	pracné vyladit bilance ŽV, takže předpoklám, že import do bilancí ŽV již 
+	nebudete opakovat. </font></li>
+</ul>
+
+<hr>
+
+<h3><font face="Arial"><b>Změny ve verzi 27.03</b></font></h3>
+<p><font face="Arial"><b>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</b>Verzi 27.03 ze dne 
+27.4.2026 </font></p>
+<ul>
+	<li><font face="Arial">Upraveno pořízení tabulky <b>CS - Systémy certifikace</b>. 
+	Pokud je tabulka prázdná, nabídne se předvyplnění podle číselníku 
+	certifikací. Do pole Odvětví lze vyplnit prázdný údaj.<br>
+&nbsp;</font></li>
+	<li><font face="Arial"><b>&lt;A. Identifikace podniku&gt;</b> - doplněna nová pole
+	<br>
+	<u>Rok zahájení přechodu na ekologické zemědělství</u> (pokud se neaplikuje ekozemědělství, automaticky se doplní rok 0000)<br>
+	<u>Podíl produktů ekologického zemědělství prodávaných jako ekologické v 
+	certifikovaných zemědělských podnicích</u> (pokud se neaplikuje ekozemědělství, 
+	automaticky se doplní 0%)<br>
+	<u>Technologie precizního zemědělství v RV <br>
+	Technologie precizního zemědělství v ŽV<br>
+	Účast ve vzájemných fondech</u> (implicitně se předvyplní NE)<br>
+	<u>Kompenzace ztrát způsobených extrémními jevy</u> (implicitně se předvyplní NE)<br>
+	<u>Plán BOZP</u> - údaj slouží pro vytvoření nového řádku Plán bezpečnosti v 
+	podniku do tabulky C.Práce - pracovníci při importu z mezd. Předpokládám, že 
+	u většiny, či všech podniků budete mít uvedeno ANO. Podle nastavení se 
+	vytvoří v tabulce C řádek č. <b>100 - Plán BOZP</b>.<br>
+	<u>Aktivity sociálního zemědělství</u> -&nbsp; údaj slouží pro vytvoření 
+	nového řádku Aktivity sociálního zemědělství do tabulky C.Práce - pracovníci 
+	při importu z mezd. Podle nastavení se vytvoří řádek č.<b>120 - Aktivity 
+	sociálního zemědělství</b>.<br>
+	<u>Rok převzetí majitelem</u> - údaj slouží k vytvoření nového řádku Rok 
+	převzetí majitelem do tabulky C.Práce - pracovníci 
+	při importu z mezd. Podle nastavení se vytvoří řádek č.<b>130 - Rok převzetí 
+	majitelem</b>.<br>
+	<br>
+	Vzhledem k rozšíření počtu položek formuláře doporučuji nastavit spuštění 
+	programu TES v zobrazení alespoň 100 sloupců na 51 řádků v souboru CONFIG.TXT 
+	(LINES=57, COLS=100). Při menším rozměru je formulář rozdělen na více 
+	obrazovek.<br>
+&nbsp;</font></li>
+	<li><font face="Arial">Nová tabulka <b>&lt;SE. Služby dostupné zemědělcům&gt;</b>. 
+	Předpokládám, že u všech podniků bude vyplněno samé ano, tedy (1,1,2,1). 
+	Upozorňuji, že pro každý řádek může mít kód dostupnosti a využití jiný 
+	význam. Při vyplňování je nutné mít po ruce metodický popis tabulky.<br>
+&nbsp; </font></li>
+	<li><font face="Arial"><b>&lt;C. Práce - pracovníci&gt;</b>. Tabulka zcela 
+	přepracována. Nyní obsahuje zcela nesouvisející údaje (údaje z mezd, plán 
+	BOZP, sociálního začleňování, generační obměny). Pro každý nový tématický okruh 
+	se&nbsp; do sloupce 07 vyplňuje pro každý řádek kód pole. Upozorňuji, že pro 
+	každý řádek má kód pole jiný význam. Při vyplňování je nutné mít po ruce 
+	metodický popis tabulky.<br>
+	Pokud je pro příslušný řádek v dotazníku pole blokováno (je šedivé), při 
+	pořízení je při přechodu tohoto pole toto vynulováno a přeskočeno.<br>
+	Vzhledem k rozšíření počtu sloupců formuláře doporučuji nastavit spuštění 
+	programu TES v zobrazení 100 sloupců (viz výše). Při tomto zobrazení je použit jednořádkový formulář pro 
+	editaci tabulky C, který je přehlednější.<br>
+	.Při importu z med se naplní údaje o manažérovi, pravidelně pracujících 
+	osobách, nepravidelně pracujících osobách.(dohodáři). Rozdělení stejně jako 
+	v předchozích letech podle<br>
+&nbsp;napočtených hodin z DRMZ 1110 a dnů z DRMZ 1808. Pro pravidelné pracovníky 
+	je zjištěn počet mužů a žen. Pro nepravidelné pracovníky (DPP) je zjištěn 
+	počet osob s DPP.<br>
+	Dále je v ročním souboru vyhledán výskyt DRMZ 410- kalendářní dny pracovních 
+	úrazů, a DRMZ 1457-pracovní dny a hodiny pracovních úrazů. Pokud se 
+	vyskytují, je do řádku <b>110 - Pracovní úrazy</b> doplněn kód 1 - ANO, 
+	jinak 0 - NE<br>&nbsp;</font></li>
+	<li><font face="Arial"><b>&lt;D4. Podrobnější členění vybraných účtů&gt;</b> - 
+	doplněny nové řádky<br>
+	<u>033 - spotřeba energií jiného původu </u>(dálkové topení) - není 
+	naplňováno, dohledat v kartách účtů.<br>
+	<u>114 - Vyšší managment</u> - není naplňováno<br>
+	<u>115 - Ostatní pravidelná pracovní síla</u> - doplní se osobní náklady z 
+	účtu 52xxxx bez mzdových nákladů dohod o provedení práce (5216, 5226). Počty osob 
+	nejsou naplněny. Pokud je budou vyžadovat, použijte počet lidí ostatních 
+	pravidelně pracujících z tabulky C.<br>
+	<u>116 - Placená příležitostná pracovní síla</u> - doplní se mzdové náklady 
+	dohod o provedení práce (5216,5226)<br>&nbsp;</font></li>
+	<li><font face="Arial"><b>&lt;G1. Zvířata&gt;</b> - doplněny nové položky 
+	obratu a to:<br>
+	- <u>77 - Počet krmných dnů v přechodném období na eko produkci</u> - položka není při 
+	importu naplňována.<br>
+	<br>
+	- <u>78 - Podíl prodeje ekologické produkce na biotrhu</u> - položka není při importu 
+	naplňována. Pokud podnik prodává produkt deklarovaný jako bioprodukt, 
+	zjistíte procentický podíl na všech prodejích dané komodity a vyberete kód 
+	procentického rozpětí z metodického popisu. Tento doplníte do množst<br>
+	<br>
+	- <u>79 - Typ ustájení</u> - položka je při importu dat z účetnictví 
+	předvyplněna. Definice pro který výkon se má předvyplnit jaký typ ustájení 
+	je v číselníku &lt;Bilance - B.Náplň bilance ŽV z výsledovky&gt;. Definice je 
+	provedena tak, že pokud se na výkonu vyskytují ve výsledovce krmné dny, pak 
+	se do bilancí předvyplní položka 79 a do množství se doplní uvedená 
+	konstanta. Nutno prověřit, případně opravit podle metodického 
+	popisu.<br><br>
+	- <u>80 - Doba pastvy</u> - položka není při importu naplňována -&nbsp; doplnit ručně 
+	zřejmě krmné dny do množství<br><br>
+	- <u>81 - Přístup na dvůr</u> - položka je předvyplněna při importu 
+	výsledovky výkonů stejným způsobem, jako typ ustájení. <br>&nbsp;</font></li>
+	<li><font face="Arial"><b>&lt;H1. Rostlinná výroba&gt;</b> - doplněny nové položky
+	obratu RV<br>
+	- <u>07 - Plocha v přechodném období na eko produkci</u> - položka není při importu 
+	naplňována.<br>
+	- <u>81 - Podíl prodeje ekologické produkce na biotrhu</u> - položka není při importu 
+	naplňována. Pokud podnik prodává produkt deklarovaný jako bioprodukt, 
+	zjistíte procentický podíl na všech prodejích dané komodity a vyberete kód 
+	procentického rozpětí z metodického popisu. Tento doplníte do množství.<br>
+&nbsp;</font></li>
+	<li><font face="Arial"><b>&lt;H2. Výrobky ŽV, vedlejší výrobky RV a OGA&gt;</b> - 
+	doplněny nové položky obratú<br>
+	- <u>81 - Podíl prodeje ekologické produkce na biotrhu</u> - položka není při importu 
+	naplňována. Pokud podnik prodává produkt deklarovaný jako bioprodukt, 
+	zjistíte procentický podíl na všech prodejích dané komodity a vyberete kód 
+	procentického rozpětí z metodického popisu. Tento doplníte do množství.<br>
+&nbsp;</font></li>
+	<li><font face="Arial"><b>&lt;J. Podpory a dotace&gt;. </b>Upraveno podle 
+	dotačních titulů roku 2025. Naplní se&nbsp; všemi dotačními tituly, tedy i 
+	těmi, které nebudou exportovány do XML. Pokud 
+	chcete zobrazit pouze řádky, které jsou určeny pro export do XML, lze přepnout 
+	klávesou <b>&lt;Tabelátor&gt; </b>na záznamy, které budou exportovány na portál 
+	přes XML. V definici kontrol jsou ponechány kontroly týkající se dotací. 
+	Pokud tyto chcete nadále využívat, je potřeba tabulku vyplnit celou, tedy i 
+	řádky, které nebudou na portál exportovány.&nbsp;<br>Dotace budou na portálu převzaty z veřejných zdrojů. Zatím nejsou k 
+	dispozici. Převzetí dat z portálu FADN se provede současně s daty z LPIS 
+	spuštěním nabídky <b>&lt;Správa - Import XML(tab. B. a J.)&gt;.</b><br>Lze 
+	libovolně opakovat.<br>&nbsp;</font></li>
+	<li><font face="Arial">Nová tabulka <b>&lt;CS. Systémy evnvironmentální 
+	certifikace&gt;</b>. <br>
+&nbsp; </font></li>
+	<li><font face="Arial">Import EMA00030.DBF z programu Majetek může být 
+	vytvořen jak verzí 26.04, tak staršími verzemi. Při importu program rozpozná 
+	strukturu souboru.<br>&nbsp;</font></li>
+	<li><font face="Arial">Import z mezd může být 
+	vytvořen jak verzí 36.16, tak staršími verzemi. Při importu program rozpozná 
+	strukturu souboru.<br>&nbsp;</font></li>
+	<li><font face="Arial">Upozornění:<br>Při stahování instalačního programu označí Windows Defender aplikaci za 
+	potencionálně nežádoucí a přesune ji do karantény. Je nutno přes nabídku &lt;<b>Soukromí 
+	a zabezpečení &gt; Zabezpečení Windows &gt; Ochrana před viry a hrozbami &gt; 
+	Historie ochrany</b>&gt; povolit aplikaci TES_2700_SETUP.EXE. <br>Dále je nutno povolit spuštění programu, který je blokován filtrem 
+	SmartScreen v programu Defender.</font></li>
+</ul>
+
+<p></p>
+
+<hr align="left">
+
+</body>
+
+</html>

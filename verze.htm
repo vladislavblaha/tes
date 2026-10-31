@@ -1,4 +1,4 @@
-﻿<html>
+<html>
 
 <head>
 <meta http-equiv="Content-Language" content="cs">
@@ -12,7 +12,7 @@
 <body bgcolor="#FFFFB3">
 
 <h2><b><font face="Arial" size="4">Popis verzí pro rok </font>
-<font face="Arial" size="3">2025&nbsp; <a href="verze2024.htm">2024</a>&nbsp; <a href="verze2023.htm">2023</a>&nbsp; <a href="verze2022.htm">2022</a>&nbsp; <a href="verze2021.htm">2021</a>&nbsp; <a href="verze2020.htm">2020</a>&nbsp; <a href="verze2019.htm">2019</a>&nbsp; <a href="verze2018.htm">2018</a>&nbsp; <a href="verze2017.htm">2017</a>&nbsp; <a href="verze2016.htm">2016</a>&nbsp; <a href="verze2015.htm">2015</a>&nbsp;
+<font face="Arial" size="3">2026&nbsp; <a href="verze2025.htm">2025</a>&nbsp; <a href="verze2024.htm">2024</a>&nbsp; <a href="verze2023.htm">2023</a>&nbsp; <a href="verze2022.htm">2022</a>&nbsp; <a href="verze2021.htm">2021</a>&nbsp; <a href="verze2020.htm">2020</a>&nbsp; <a href="verze2019.htm">2019</a>&nbsp; <a href="verze2018.htm">2018</a>&nbsp; <a href="verze2017.htm">2017</a>&nbsp; <a href="verze2016.htm">2016</a>&nbsp; <a href="verze2015.htm">2015</a>&nbsp;
 <a href="verze2014.htm">2014</a>&nbsp;
 <a href="verze2013.htm">2013</a>&nbsp; <a href="verze2012.htm">2012</a>&nbsp; 
 <a href="verze2011.htm">2011</a>&nbsp; 
@@ -23,75 +23,10 @@
 <a href="verze2003.htm">2003</a>&nbsp; <a href="verze2002.htm">2002</a></font></b></h2>
 <hr>
 
-<h3><font face="Arial"><b>Změny ve verzi 27.06</b></font></h3>
-<p><font face="Arial"><b>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</b>Verzi 27.06 ze dne 
-9.7.2026&nbsp; stáhněte zde&nbsp;...<b>&nbsp;&nbsp;<a href="2025/tes_2706_setup.exe"><img border="0" src="IMG/disketa.gif" width="16" height="16"></a>&nbsp;&nbsp;</b></font></p>
-<ul>
-	<li><font face="Arial">Upraven export dat z tabulky &lt;A. Identifikace&gt; do XML v souvislosti 
-	s přejmenováním položky ROK na ROK_EKO.</font></li>
-	<li><font face="Arial">Upraven export dat z&nbsp; tabulky &lt;SE. Služby&gt; do XML. 
-	Někdy hlásilo, že soubor není setříděn. </font></li>
-</ul>
-
-<hr>
-
-<h3><font face="Arial"><b>Změny ve verzi 27.05</b></font></h3>
-<p><font face="Arial"><b>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</b>Verzi 27.05 ze dne 
-12.5.2026 <b>
-&nbsp;</b>stáhněte zde&nbsp;...<b>&nbsp;&nbsp;<a href="2025/tes_2705_setup.exe"><img border="0" src="IMG/disketa.gif" width="16" height="16"></a>&nbsp;&nbsp;</b></font></p>
-<ul>
-	<li><font face="Arial">Upraven export dat z tabulky &lt;G1. Zvířata&gt; do 
-	XML v souvislosti se zavedením nových položek obratu 77,78,79,80,81. Při 
-	exportu bylo přepočítáváno množství u drůběže (kategorie 047, 048, 049).<br>
-	Proto byla rozšířena definice v číselníku&nbsp; <b>&lt;5. Položky bilance ŽV&gt;
-	</b>o nastavení pro každou položku obratu, zda u ní přepočítávat množství 
-	při exportu do XML souboru. </font></li>
-</ul>
-
-<hr>
-
-<h3><font face="Arial"><b>Změny ve verzi 27.04</b></font></h3>
-<p><font face="Arial"><b>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</b>Verzi 27.04 ze dne 
-7.5.2026 </font></p>
-<ul>
-	<li><font face="Arial">Upraven export dat z tabulky <b>&lt;G1. Zvířata&gt;</b> do 
-	XML v souvislosti se zavedením kontroly S0718 - Přístup na dvůr není 
-	vyplněn, nebo je špatně vyplněn a kontroly S0720 - Doba pastvy není 
-	vyplněna. Při těchto kontrolách se pracuje s novými položkami obratu bilancí 
-	ŽV 80-doba pastvy a 81-přístup na dvůr. Ve všech předchozích verzích se 
-	jednotlivá pole tabulky G1 exportovala pouze v případě, že byla nenulová. 
-	Toto omezení je zrušeno pro pole Množství, protože se jeho prostřednictvím 
-	předává informace o přístupu na dvůr 0-NE, 1-ANO. Pokud je na portálu FADN 
-	zakázáno jakékoliv vyplnění údaje, je nutno celý řádek s položkou obratu 81 
-	smazat,&nbsp; pak se neexportuje žádná informace o přístupu na dvůr.<br>
-	Byl upraven číselník <b>&lt;Náplň bilancí ŽV z výsledovky &gt; </b>&nbsp;<br>
-	- <b> <u>80 - Doba pastvy</u></b> - zdefinováno naplnění při výskytu krmných 
-	dnů pro kategorii dojnice (předvyplní se do množství 0 dnů),&nbsp; pro 
-	kategorii masné krávy, bahnice a kozy&nbsp; se předvyplní&nbsp; počet 
-	krmných dnů (předpoklad celoroční pastvy). Pokud se liší od skutečnosti, je 
-	třeba množství v položce obratu 80 upravit. Vyplňuje se tedy pouze u výkonu 
-	030, 032, 038, 040. Pro tyto výkony si do množství položky obratu 80 
-	doklepněte krmné dny, nebo 365 dnů, podle toho co bude chtít kontrolor.<br>- <b> <u>81 - Přístup na dvůr</u></b> - zdefinováno 
-	naplnění při výskytu krmných dnů pro všechny kategorii zvířat. Do množství 
-	se předvyplní 0-není přístup na dvůr. Aby šlo nějak detekovat, zda je pro 
-	daný výkon vytvořena položka obratu 81, ukládá se do Kč počet krmných dnů z 
-	výsledovky. Toho je využito v nové kontrole F9 - kontrola za výkony s č. <b>
-	29 - Přístup na dvůr x Ustájení. </b>V ní je zjištěn vyplněný typ ustájení. 
-	Pokud je použito ustájení 50-pastva, nesmí být položka přístup na dvůr 
-	vyplněna. Chybu z kontroly odstraníte smazáním položky obratu 81 - přístup 
-	na dvůr. <br>
-	Pokud tuto kontrolu chcete použít u již naimportovaných podniků, je potřeba 
-	si do položky obratu 81 do sloupce Kč doplnit libovolnou hodnotu, aby tím 
-	byl navozen stav, jak by to vypadalo po opakovaném importu. Vím, jak je 
-	pracné vyladit bilance ŽV, takže předpoklám, že import do bilancí ŽV již 
-	nebudete opakovat. </font></li>
-</ul>
-
-<hr>
-
-<h3><font face="Arial"><b>Změny ve verzi 27.03</b></font></h3>
-<p><font face="Arial"><b>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</b>Verzi 27.03 ze dne 
-27.4.2026 </font></p>
+<h3><font face="Arial"><b>Změny ve verzi 28.00</b></font></h3>
+<p><font face="Arial"><b>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</b>Verzi 28.00 ze dne 
+xx.xx.2027&nbsp; stáhněte zde&nbsp;...<b>&nbsp;&nbsp;<a href="2026/tes_2800_setup.exe"><img border="0" src="IMG/disketa.gif" width="16" height="16"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b>
+Doplněk vDosPlus ke stažení v nabídce <a href="64bit.htm">64 bitové OS</a> </font></p>
 <ul>
 	<li><font face="Arial">Upraveno pořízení tabulky <b>CS - Systémy certifikace</b>. 
 	Pokud je tabulka prázdná, nabídne se předvyplnění podle číselníku 
